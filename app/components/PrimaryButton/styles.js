@@ -2,7 +2,7 @@
 // PrimaryButton styles.js
 
 import { StyleSheet } from 'react-native';
-import { Colors } from '../../lib/globals';
+import { Colors } from '../../lib';
 
 export default styles = StyleSheet.create({
   primaryBtn: {

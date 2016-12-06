@@ -2,7 +2,7 @@
 // SignIn styles.js
 
 import { StyleSheet, Dimensions } from 'react-native';
-import { Colors } from '../../lib/globals';
+import { Colors } from '../../lib';
 
 let { width, height }  = Dimensions.get('window');
 

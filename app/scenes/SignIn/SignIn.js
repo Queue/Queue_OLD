@@ -6,12 +6,14 @@ import styles from './styles';
 import { View, Text } from 'react-native';
 
 // Components
-import PrimaryButton from '../../components/PrimaryButton';
-import EmailField from '../../components/EmailField'
-import PasswordField from '../../components/PasswordField';
+import {
+  PrimaryButton,
+  EmailField,
+  PasswordField
+} from '../../components';
 
 // Globals
-import { Colors } from '../../lib/globals';
+import { Colors, Creds } from '../../lib';
 
 export default class SignIn extends Component {
   constructor(props) {

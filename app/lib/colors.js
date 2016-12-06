@@ -1,8 +1,7 @@
 //
-// Globals
-
 // Color Pallete
-export const Colors = {
+
+export default Colors = {
 
   primaryBackground: '#eaeaea',
   primaryForeground: 'orange'
