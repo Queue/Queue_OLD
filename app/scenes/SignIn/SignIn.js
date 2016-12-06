@@ -75,8 +75,3 @@ export default class SignIn extends Component {
     );
   }
 }
-
-//<Grid style={ styles.main }>
-  //<Col style={{ flex: 1, maxWidth: 260 }}>
-  //</Col>
-//</Grid>
