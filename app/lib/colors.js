@@ -4,6 +4,6 @@
 export default Colors = {
 
   primaryBackground: '#eaeaea',
-  primaryForeground: 'orange'
+  primaryForeground: '#4AC948'
 
 }

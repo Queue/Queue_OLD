@@ -7,5 +7,6 @@
 import EmailField from './EmailField';
 import PasswordField from './PasswordField';
 import PrimaryButton from './PrimaryButton';
+import TextButton from './TextButton';
 
-export { EmailField, PasswordField, PrimaryButton };
+export { EmailField, PasswordField, PrimaryButton, TextButton };

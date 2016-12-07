@@ -22,7 +22,7 @@ exports[`test renders correctly 1`] = `
       ellipsizeMode="tail"
       style={
         Object {
-          "color": "orange",
+          "color": "#4AC948",
           "fontFamily": "airstream",
           "fontSize": 100,
           "marginBottom": -20,
@@ -46,6 +46,11 @@ exports[`test renders correctly 1`] = `
       <TextInput
         onChangeText={[Function]}
         placeholder="Email"
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
         value="" />
     </View>
     <View
@@ -65,58 +70,93 @@ exports[`test renders correctly 1`] = `
         placeholder="Password"
         value="" />
     </View>
-    <View>
-      <View
-        accessibilityComponentType="button"
-        accessibilityLabel={undefined}
-        accessibilityTraits="button"
+    <View
+      accessibilityComponentType="button"
+      accessibilityLabel={undefined}
+      accessibilityTraits="button"
+      accessible={true}
+      hitSlop={undefined}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "borderColor": "#4AC948",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "margin": 15,
+          "marginTop": 20,
+          "opacity": 1,
+          "overflow": "hidden",
+          "padding": 8,
+        }
+      }
+      testID={undefined}>
+      <Text
         accessible={true}
-        hitSlop={undefined}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "#007aff",
+              "fontFamily": "HelveticaNeue-Medium",
+              "fontSize": 17,
+              "fontWeight": "bold",
+              "textAlign": "center",
+            },
+            null,
+            Object {
+              "color": "#4AC948",
+              "fontSize": 20,
+              "fontWeight": "300",
+            },
+            null,
+          ]
+        }>
+        Sign In
+      </Text>
+    </View>
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      hitSlop={undefined}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+          },
+          undefined,
+        ]
+      }
+      testID={undefined}>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
         style={
           Object {
-            "borderColor": "orange",
-            "borderRadius": 4,
-            "borderWidth": 1,
-            "margin": 15,
-            "marginTop": 25,
-            "opacity": 1,
-            "overflow": "hidden",
-            "padding": 8,
+            "color": "#4AC948",
+            "fontSize": 14,
+            "padding": 5,
+            "textAlign": "center",
           }
-        }
-        testID={undefined}>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Array [
-              Object {
-                "color": "#007aff",
-                "fontFamily": "HelveticaNeue-Medium",
-                "fontSize": 17,
-                "fontWeight": "bold",
-                "textAlign": "center",
-              },
-              null,
-              Object {
-                "color": "orange",
-                "fontSize": 20,
-                "fontWeight": "300",
-              },
-              null,
-            ]
-          }>
-          Sign In
-        </Text>
-      </View>
+        }>
+        Dont have an account?
+      </Text>
     </View>
   </View>
 </View>

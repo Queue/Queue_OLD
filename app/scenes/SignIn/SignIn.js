@@ -14,7 +14,8 @@ import {
 import {
   PrimaryButton,
   EmailField,
-  PasswordField
+  PasswordField,
+  TextButton
 } from '../../components';
 
 // Globals
@@ -32,8 +33,6 @@ export default class SignIn extends Component {
       emailText: '',
       passwordText: ''
     };
-
-    console.warn(Firebase);
 
     this.pressBtn = this.pressBtn.bind(this);
     this.setEmailText = this.setEmailText.bind(this);
@@ -74,11 +73,16 @@ export default class SignIn extends Component {
             name={'Sign In'}
             press={this.pressBtn}
           />
+          <TextButton
+            text={'Dont have an account?'}
+            press={this.pressBtn}
+          />
         </View>
       </View>
     );
   }
 
 }
-//
+
 // end
+//
