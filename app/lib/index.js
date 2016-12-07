@@ -3,5 +3,6 @@
 
 import Creds from './creds';
 import Colors from './colors';
+import Firebase from './firebase';
 
-export { Creds, Colors };
+export { Creds, Colors, Firebase };

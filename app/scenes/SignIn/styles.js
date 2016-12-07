@@ -17,5 +17,12 @@ export default styles = StyleSheet.create({
   },
   wrapper: {
     width: 250
+  },
+  headerText: {
+    fontSize: 100,
+    fontFamily: 'airstream',
+    marginBottom: -20,
+    color: Colors.primaryForeground,
+    textAlign: 'center'
   }
 });

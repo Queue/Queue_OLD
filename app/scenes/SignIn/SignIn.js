@@ -3,7 +3,12 @@
 
 import React, { Component } from 'react';
 import styles from './styles';
-import { View, Text } from 'react-native';
+
+// RN
+import {
+  View,
+  Text
+} from 'react-native';
 
 // Components
 import {
@@ -13,7 +18,10 @@ import {
 } from '../../components';
 
 // Globals
-import { Colors, Creds } from '../../lib';
+import {
+  Colors,
+  Firebase
+} from '../../lib';
 
 export default class SignIn extends Component {
   constructor(props) {
@@ -24,6 +32,8 @@ export default class SignIn extends Component {
       emailText: '',
       passwordText: ''
     };
+
+    console.warn(Firebase);
 
     this.pressBtn = this.pressBtn.bind(this);
     this.setEmailText = this.setEmailText.bind(this);
@@ -47,13 +57,7 @@ export default class SignIn extends Component {
       <View style={ styles.container }>
         <View style={ styles.wrapper }>
           <Text
-            style={{
-              fontSize: 100,
-              fontFamily: 'airstream',
-              marginBottom: -20,
-              color: Colors.primaryForeground,
-              textAlign: 'center'
-            }}>
+            style={ styles.headerText }>
             Queue
           </Text>
           <EmailField
@@ -74,4 +78,7 @@ export default class SignIn extends Component {
       </View>
     );
   }
+
 }
+//
+// end
