@@ -44,11 +44,11 @@ export default class SignIn extends Component {
   }
 
   setEmailText() {
-    return ({text}) => this.setState({emailText: text});
+    return (text) => this.setState({emailText: text});
   }
 
   setPasswordText() {
-    return ({text}) => this.setState({passwordText: text});
+    return (text) => this.setState({passwordText: text});
   }
 
   render() {
@@ -61,12 +61,12 @@ export default class SignIn extends Component {
           </Text>
           <EmailField
             placeholder={'Email'}
-            change={this.setEmailText}
+            change={this.setEmailText()}
             val={this.state.emailText}
           />
           <PasswordField
             placeholder={'Password'}
-            change={this.setPasswordText}
+            change={this.setPasswordText()}
             val={this.state.passwordText}
           />
           <PrimaryButton

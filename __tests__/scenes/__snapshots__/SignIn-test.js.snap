@@ -40,7 +40,8 @@ exports[`test renders correctly 1`] = `
           "height": 40,
           "justifyContent": "center",
           "margin": 10,
-          "padding": 15,
+          "paddingLeft": 15,
+          "paddingRight": 15,
         }
       }>
       <TextInput
@@ -62,12 +63,18 @@ exports[`test renders correctly 1`] = `
           "height": 40,
           "justifyContent": "center",
           "margin": 10,
-          "padding": 15,
+          "paddingLeft": 15,
+          "paddingRight": 15,
         }
       }>
       <TextInput
         onChangeText={[Function]}
         placeholder="Password"
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
         value="" />
     </View>
     <View

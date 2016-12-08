@@ -6,8 +6,9 @@ import { StyleSheet } from 'react-native'
 export default styles = StyleSheet.create({
   emailFieldWrapper: {
     margin: 10,
-    padding: 15,
     height: 40,
+    paddingLeft: 15,
+    paddingRight: 15,
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 2,
