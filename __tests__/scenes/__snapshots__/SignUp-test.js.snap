@@ -32,6 +32,7 @@ exports[`test renders correctly 1`] = `
       Queue
     </Text>
     <TextInput
+      autoCapitalize="none"
       keyboardType="email-address"
       onChangeText={[Function]}
       placeholder="Email"
@@ -50,6 +51,7 @@ exports[`test renders correctly 1`] = `
       }
       value="" />
     <TextInput
+      autoCapitalize="none"
       onChangeText={[Function]}
       placeholder="Password"
       secureTextEntry={true}
@@ -68,6 +70,7 @@ exports[`test renders correctly 1`] = `
       }
       value="" />
     <TextInput
+      autoCapitalize="none"
       onChangeText={[Function]}
       placeholder="Confirm Password"
       secureTextEntry={true}

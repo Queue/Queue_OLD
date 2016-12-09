@@ -31,32 +31,32 @@ export default class SignUp extends Component {
     super(props);
 
     this.state = {
-      num: 0,
       emailText: '',
-      passwordText: ''
+      passwordText: '',
+      passwordConfirmText: ''
     };
 
     // Bind all functions
-    this.pressBtn = this.pressBtn.bind(this);
-    this.setEmailText = this.setEmailText.bind(this);
-    this.setPasswordText = this.setPasswordText.bind(this);
-    this.setPasswordConfirmText = this.setPasswordConfirmText.bind(this);
+    this.createUser = this.createUser.bind(this);
   }
 
-  pressBtn() {
-    return () => this.setState({num: this.state.num + 1});
-  }
-
-  setEmailText() {
-    return (text) => this.setState({emailText: text});
-  }
-
-  setPasswordText() {
-    return (text) => this.setState({passwordText: text});
-  }
-
-  setPasswordConfirmText() {
-    return (text) => this.setState({passwordText: text});
+  createUser() {
+    if (this.state.passwordText !== '' && this.state.passwordText === this.state.passwordConfirmText ) {
+        // Create a new user
+        Firebase.auth().createUserWithEmailAndPassword(this.state.emailText, this.state.passwordText).catch(
+          (error) => {
+            if (error) {
+              console.error(
+                'ERROR' + '\n' +
+                'Code: ' + error.code + '\n' +
+                'Message: ' + error.message
+              );
+            }
+          }
+        );
+    } else {
+      console.warn('Enter a password!');
+    }
   }
 
   render() {
@@ -69,24 +69,24 @@ export default class SignUp extends Component {
           </Text>
           <EmailField
             placeholder = {'Email'}
-            change = {this.setEmailText()}
+            change = { (text) => this.setState({emailText: text}) }
             val = {this.state.emailText}
           />
           <PasswordField
             placeholder = {'Password'}
             secure = {true}
-            change = {this.setPasswordText()}
+            change = { (text) => this.setState({passwordText: text}) }
             val = {this.state.passwordText}
           />
           <PasswordField
             placeholder = {'Confirm Password'}
             secure = {true}
-            change = {this.setPasswordConfirmText()}
-            val = {this.state.passwordText}
+            change = { (text) => this.setState({passwordConfirmText: text}) }
+            val = {this.state.passwordConfirmText}
           />
           <PrimaryButton
             name={'Sign Up'}
-            press={this.pressBtn()}
+            press={this.createUser}
           />
           <TextButton
             text={'Already have an account?'}

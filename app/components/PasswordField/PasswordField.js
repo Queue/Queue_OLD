@@ -9,6 +9,7 @@ export default PasswordField = ({placeholder, change, val, secure}) =>  {
   return (
     <TextInput
       style = {styles.passwordField }
+      autoCapitalize={'none'}
       secureTextEntry = {secure}
       onChangeText = {change}
       placeholder = {placeholder}

@@ -9,6 +9,7 @@ export default EmailField = ({placeholder, change, val}) => {
   return (
     <TextInput
       style={ styles.emailField }
+      autoCapitalize={'none'}
       onChangeText={change}
       keyboardType={'email-address'}
       placeholder={placeholder}
