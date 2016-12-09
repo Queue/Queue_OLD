@@ -31,52 +31,41 @@ exports[`test renders correctly 1`] = `
       }>
       Queue
     </Text>
-    <View
+    <TextInput
+      keyboardType="email-address"
+      onChangeText={[Function]}
+      placeholder="Email"
       style={
         Object {
           "alignItems": "center",
           "backgroundColor": "white",
           "borderRadius": 2,
+          "color": "#4AC948",
           "height": 40,
           "justifyContent": "center",
           "margin": 10,
           "paddingLeft": 15,
           "paddingRight": 15,
         }
-      }>
-      <TextInput
-        onChangeText={[Function]}
-        placeholder="Email"
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-        value="" />
-    </View>
-    <View
+      }
+      value="" />
+    <TextInput
+      onChangeText={[Function]}
+      placeholder="Password"
       style={
         Object {
           "alignItems": "center",
           "backgroundColor": "white",
           "borderRadius": 2,
+          "color": "#4AC948",
           "height": 40,
           "justifyContent": "center",
           "margin": 10,
           "paddingLeft": 15,
           "paddingRight": 15,
         }
-      }>
-      <TextInput
-        onChangeText={[Function]}
-        placeholder="Password"
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-        value="" />
-    </View>
+      }
+      value="" />
     <View
       accessibilityComponentType="button"
       accessibilityLabel={undefined}
@@ -165,6 +154,20 @@ exports[`test renders correctly 1`] = `
         Dont have an account?
       </Text>
     </View>
+    <View
+      style={
+        Array [
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+          },
+          Object {
+            "height": 0,
+          },
+          undefined,
+        ]
+      } />
   </View>
 </View>
 `;

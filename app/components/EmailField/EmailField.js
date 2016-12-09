@@ -7,14 +7,13 @@ import styles from './styles';
 
 export default EmailField = ({placeholder, change, val}) =>  {
   return (
-    <View style={ styles.emailFieldWrapper }>
-      <TextInput
-        style={ styles.emailField }
-        onChangeText={change}
-        placeholder={placeholder}
-        value={val}
-      />
-    </View>
+    <TextInput
+      style={ styles.emailField }
+      onChangeText={change}
+      keyboardType={'email-address'}
+      placeholder={placeholder}
+      value={val}
+    />
   );
 }
 

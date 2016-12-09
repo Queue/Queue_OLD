@@ -18,6 +18,9 @@ import {
   TextButton
 } from '../../components';
 
+// So the keyboard doesnt get in the way
+import KeyboardSpacer from 'react-native-keyboard-spacer';
+
 // Globals
 import {
   Colors,
@@ -77,6 +80,7 @@ export default class SignIn extends Component {
             text={'Dont have an account?'}
             press={this.pressBtn}
           />
+          <KeyboardSpacer />
         </View>
       </View>
     );
