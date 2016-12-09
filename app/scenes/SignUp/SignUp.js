@@ -1,5 +1,5 @@
 //
-// SignIn Scene
+// SignUp Scene
 
 import React, { Component } from 'react';
 import styles from './styles';
@@ -24,10 +24,9 @@ import KeyboardSpacer from 'react-native-keyboard-spacer';
 // Data
 import Firebase from '../../lib/firebase';
 
-// Router
-import { Actions } from 'react-native-router-flux';
+import { Actions } from 'react-native-router-flux'
 
-export default class SignIn extends Component {
+export default class SignUp extends Component {
   constructor(props) {
     super(props);
 
@@ -37,9 +36,11 @@ export default class SignIn extends Component {
       passwordText: ''
     };
 
+    // Bind all functions
     this.pressBtn = this.pressBtn.bind(this);
     this.setEmailText = this.setEmailText.bind(this);
     this.setPasswordText = this.setPasswordText.bind(this);
+    this.setPasswordConfirmText = this.setPasswordConfirmText.bind(this);
   }
 
   pressBtn() {
@@ -51,6 +52,10 @@ export default class SignIn extends Component {
   }
 
   setPasswordText() {
+    return (text) => this.setState({passwordText: text});
+  }
+
+  setPasswordConfirmText() {
     return (text) => this.setState({passwordText: text});
   }
 
@@ -73,13 +78,19 @@ export default class SignIn extends Component {
             change = {this.setPasswordText()}
             val = {this.state.passwordText}
           />
+          <PasswordField
+            placeholder = {'Confirm Password'}
+            secure = {true}
+            change = {this.setPasswordConfirmText()}
+            val = {this.state.passwordText}
+          />
           <PrimaryButton
-            name={'Sign In'}
+            name={'Sign Up'}
             press={this.pressBtn()}
           />
           <TextButton
-            text={'Dont have an account?'}
-            press={Actions.SignUpRoute}
+            text={'Already have an account?'}
+            press={Actions.SignInRoute}
           />
           <KeyboardSpacer />
         </View>

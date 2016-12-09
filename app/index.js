@@ -1,10 +1,14 @@
+//
+// All navigation is done here.
+
 import React, { Component } from 'react';
-import SignIn from './scenes/SignIn';
+import { Scene, Router } from 'react-native-router-flux';
+import Navigation from './lib/navigation';
 
 export default class Queue extends Component {
   render() {
     return (
-      <SignIn />
+      <Navigation />
     );
   }
 }

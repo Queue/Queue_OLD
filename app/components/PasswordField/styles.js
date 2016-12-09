@@ -2,7 +2,7 @@
 // PasswordField styles.js
 
 import { StyleSheet } from 'react-native';
-import { Colors } from '../../lib';
+import Colors from '../../lib/colors';
 
 export default styles = StyleSheet.create({
   passwordField: {
