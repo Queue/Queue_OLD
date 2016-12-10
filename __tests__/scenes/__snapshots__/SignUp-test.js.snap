@@ -82,7 +82,7 @@ exports[`test renders correctly 1`] = `
       value="" />
     <TextInput
       autoCapitalize="none"
-      editable={undefined}
+      editable={true}
       onChangeText={[Function]}
       placeholder="Confirm Password"
       secureTextEntry={true}

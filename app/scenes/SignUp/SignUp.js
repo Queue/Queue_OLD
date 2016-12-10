@@ -44,6 +44,7 @@ export default class SignUp extends Component {
       emailText: '',
       passwordText: '',
       passwordConfirmText: '',
+      unfocus: true,
 
       // Color
       passwordConfirmColor: Colors.primaryForeground,
@@ -82,6 +83,28 @@ export default class SignUp extends Component {
     }
   }
 
+  checkPassLength(text) {
+    this.setState({passwordText: text});
+
+    if (this.state.passwordText.length < 6) {
+      this.setState({passwordColor: 'red'});
+    } else {
+      this.setState({passwordColor: Colors.primaryForeground});
+    }
+  }
+
+  checkConfirmPass(text) {
+    this.setState({passwordConfirmText: text});
+
+    if (this.state.passwordConfirmText != this.state.passwordText) {
+
+      this.setState({passwordConfirmColor: 'red'});
+
+    } else {
+      this.setState({passwordConfirmColor: Colors.primaryForeground});
+    }
+  }
+
   render() {
     return (
       <View style = {styles.container}>
@@ -93,21 +116,20 @@ export default class SignUp extends Component {
           <EmailField
             placeholder = {'Email'}
             focus={this.state.focus}
-            change = { (text) => this.setState({emailText: text}) }
+            change = {(text) => this.setState({emailText: text})}
             val = {this.state.emailText}
           />
           <PasswordField
-            textColor = {this.state.notLongEnough}
+            textColor = {this.state.passwordColor}
             placeholder = {'Password'}
-            secure = {true}
-            change = { (text) => this.setState({passwordText: text}) }
+            change = {this.checkPassLength.bind(this)}
             val = {this.state.passwordText}
           />
           <PasswordField
-            textColor = {this.state.passwordsMatch}
+            textColor = {this.state.passwordConfirmColor}
             placeholder = {'Confirm Password'}
-            secure = {true}
-            change = { (text) => this.setState({passwordConfirmText: text}) }
+            edit = {this.state.unfocus}
+            change = {this.checkConfirmPass.bind(this)}
             val = {this.state.passwordConfirmText}
           />
           <PrimaryButton
