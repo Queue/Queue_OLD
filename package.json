@@ -11,6 +11,7 @@
     "react": "~15.4.0-rc.4",
     "react-native": "^0.39.0",
     "react-native-button": "^1.7.1",
+    "react-native-dismiss-keyboard": "^1.0.0",
     "react-native-easy-grid": "^0.1.7",
     "react-native-keyboard-spacer": "^0.3.0",
     "react-native-router-flux": "^3.37.0"
@@ -24,6 +25,8 @@
   },
   "jest": {
     "preset": "react-native",
-    "setupFiles" : ["./.jestsetup.js"]
+    "setupFiles": [
+      "./.jestsetup.js"
+    ]
   }
 }

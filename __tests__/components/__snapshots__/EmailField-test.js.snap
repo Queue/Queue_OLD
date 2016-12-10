@@ -1,21 +1,26 @@
 exports[`test renders correctly 1`] = `
 <TextInput
   autoCapitalize="none"
+  autoFocus={undefined}
   keyboardType="email-address"
   onChangeText={undefined}
   placeholder="test"
   style={
-    Object {
-      "alignItems": "center",
-      "backgroundColor": "white",
-      "borderRadius": 2,
-      "color": "#4AC948",
-      "height": 40,
-      "justifyContent": "center",
-      "margin": 10,
-      "paddingLeft": 15,
-      "paddingRight": 15,
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "white",
+        "borderRadius": 2,
+        "height": 40,
+        "justifyContent": "center",
+        "margin": 10,
+        "paddingLeft": 15,
+        "paddingRight": 15,
+      },
+      Object {
+        "color": "#4AC948",
+      },
+    ]
   }
   value={undefined} />
 `;

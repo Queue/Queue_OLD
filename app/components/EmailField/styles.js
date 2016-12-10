@@ -6,7 +6,6 @@ import Colors from '../../lib/colors';
 
 export default styles = StyleSheet.create({
   emailField: {
-    color: Colors.primaryForeground,
     margin: 10,
     height: 40,
     paddingLeft: 15,

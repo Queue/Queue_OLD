@@ -33,40 +33,51 @@ exports[`test renders correctly 1`] = `
     </Text>
     <TextInput
       autoCapitalize="none"
+      autoFocus={undefined}
       keyboardType="email-address"
       onChangeText={[Function]}
       placeholder="Email"
       style={
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "white",
-          "borderRadius": 2,
-          "color": "#4AC948",
-          "height": 40,
-          "justifyContent": "center",
-          "margin": 10,
-          "paddingLeft": 15,
-          "paddingRight": 15,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "white",
+            "borderRadius": 2,
+            "height": 40,
+            "justifyContent": "center",
+            "margin": 10,
+            "paddingLeft": 15,
+            "paddingRight": 15,
+          },
+          Object {
+            "color": "#4AC948",
+          },
+        ]
       }
       value="" />
     <TextInput
       autoCapitalize="none"
+      editable={undefined}
       onChangeText={[Function]}
       placeholder="Password"
       secureTextEntry={true}
       style={
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "white",
-          "borderRadius": 2,
-          "color": "#4AC948",
-          "height": 40,
-          "justifyContent": "center",
-          "margin": 10,
-          "paddingLeft": 15,
-          "paddingRight": 15,
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "white",
+            "borderRadius": 2,
+            "color": "#4AC948",
+            "height": 40,
+            "justifyContent": "center",
+            "margin": 10,
+            "paddingLeft": 15,
+            "paddingRight": 15,
+          },
+          Object {
+            "color": "#4AC948",
+          },
+        ]
       }
       value="" />
     <View
