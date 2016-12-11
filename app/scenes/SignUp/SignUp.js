@@ -32,6 +32,9 @@ import Colors from '../../lib/colors';
 // Router Actions see ../../lib/navigation
 import { Actions } from 'react-native-router-flux'
 
+// Dismiss keyboard
+import dismissKeyboard from 'react-native-dismiss-keyboard';
+
 export default class SignUp extends Component {
   constructor(props) {
     super(props);
@@ -71,6 +74,8 @@ export default class SignUp extends Component {
         }
       );
 
+      dismissKeyboard();
+
       // Reset fields state
       this.setState({
         emailText: '',
@@ -78,31 +83,32 @@ export default class SignUp extends Component {
         passwordConfirmText: ''
       });
 
+      // TODO go to users Queue dashboard instead of 
+      Actions.SignInRoute();
+
     } else {
       console.warn('Enter a password!');
     }
   }
 
   checkPassLength(text) {
-    this.setState({passwordText: text});
-
-    if (this.state.passwordText.length < 6) {
-      this.setState({passwordColor: 'red'});
-    } else {
+    if (text.length >= 6) {
       this.setState({passwordColor: Colors.primaryForeground});
+    } else {
+      this.setState({passwordColor: Colors.error});
     }
+
+    this.setState({passwordText: text});
   }
 
   checkConfirmPass(text) {
-    this.setState({passwordConfirmText: text});
-
-    if (this.state.passwordConfirmText != this.state.passwordText) {
-
-      this.setState({passwordConfirmColor: 'red'});
-
-    } else {
+    if (text === this.state.passwordText) {
       this.setState({passwordConfirmColor: Colors.primaryForeground});
+    } else {
+      this.setState({passwordConfirmColor: Colors.error});
     }
+
+    this.setState({passwordConfirmText: text});
   }
 
   render() {
