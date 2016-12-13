@@ -74,12 +74,12 @@ export default class SignIn extends Component {
             val = {this.state.passwordText}
           />
           <PrimaryButton
-            name={'Sign In'}
-            press={this.pressBtn()}
+            name = {'Sign In'}
+            press = {this.pressBtn()}
           />
           <TextButton
-            text={'Dont have an account?'}
-            press={Actions.SignUpRoute}
+            text = {'Dont have an account?'}
+            press = {Actions.SignUpRoute}
           />
           <KeyboardSpacer />
         </View>

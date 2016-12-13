@@ -1,16 +1,9 @@
 //
 // SignUp Scene
 
-// @todo create a controller for its color
-
 import React, { Component } from 'react';
 import styles from './styles';
-
-// RN
-import {
-  View,
-  Text
-} from 'react-native';
+import {View,  Text} from 'react-native';
 
 // Components
 import {
@@ -139,8 +132,8 @@ export default class SignUp extends Component {
             val = {this.state.passwordConfirmText}
           />
           <PrimaryButton
-            name={'Sign Up'}
-            press={this.createUser}
+            name = {'Sign Up'}
+            press = {this.createUser}
           />
           <TextButton
             text={'Already have an account?'}

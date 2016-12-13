@@ -1,0 +1,37 @@
+exports[`test renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "flexDirection": "row",
+    }
+  }>
+  <View
+    size={3}
+    style={
+      Object {
+        "backgroundColor": "red",
+        "flex": 3,
+        "flexDirection": "column",
+      }
+    } />
+  <View
+    size={4}
+    style={
+      Object {
+        "backgroundColor": "white",
+        "flex": 4,
+        "flexDirection": "column",
+      }
+    } />
+  <View
+    size={1}
+    style={
+      Object {
+        "backgroundColor": "blue",
+        "flex": 1,
+        "flexDirection": "column",
+      }
+    } />
+</View>
+`;
