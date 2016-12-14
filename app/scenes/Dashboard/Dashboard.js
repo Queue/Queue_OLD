@@ -2,6 +2,7 @@
 // Dashboard scene
 
 import React, { Component } from 'react';
+import { View, Text } from 'react-native';
 import { Grid, Col } from 'react-native-easy-grid';
 import styles from './styles';
 
@@ -15,9 +16,13 @@ export default class Dashboard extends Component {
   render() {
     return (
       <Grid>
-        <Col size={3} style={{backgroundColor: 'red'}}></Col>
-        <Col size={4} style={{backgroundColor: 'white'}}></Col>
-        <Col size={1} style={{backgroundColor: 'blue'}}></Col>
+
+        <Col style={{backgroundColor: 'red', width: 110}}></Col>
+
+        <Col style={{backgroundColor: '#eaeaea'}}></Col>
+
+        <Col style={{backgroundColor: 'blue', width: 350}}></Col>
+
       </Grid>
     );
   }

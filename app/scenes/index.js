@@ -3,5 +3,6 @@
 
 import SignIn from './SignIn';
 import SignUp from './SignUp';
+import Dashboard from './Dashboard';
 
-export { SignIn, SignUp };
+export { SignIn, SignUp, Dashboard };
