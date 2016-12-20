@@ -2,9 +2,8 @@
 // Dashboard scene
 
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 import { Grid, Col } from 'react-native-easy-grid';
-import styles from './styles';
 
 export default class Dashboard extends Component {
   constructor(props) {
@@ -27,3 +26,9 @@ export default class Dashboard extends Component {
     );
   }
 };
+
+const styles = StyleSheet.create({
+  default: {
+    backgroundColor: 'white'
+  }
+});

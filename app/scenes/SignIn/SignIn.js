@@ -22,7 +22,7 @@ import {
 import KeyboardSpacer from 'react-native-keyboard-spacer';
 
 // Data
-import Firebase from '../../lib/firebase';
+//import Firebase from '../../lib/firebase';
 
 // Router
 import { Actions } from 'react-native-router-flux';
@@ -75,10 +75,15 @@ export default class SignIn extends Component {
           />
           <PrimaryButton
             name = {'Sign In'}
-            press = {this.pressBtn()}
+            press = {Actions.DashboardRoute}
           />
           <TextButton
             text = {'Dont have an account?'}
+            press = {Actions.SignUpRoute}
+            size = {18}
+          />
+          <TextButton
+            text = {'Forgot your password?'}
             press = {Actions.SignUpRoute}
           />
           <KeyboardSpacer />

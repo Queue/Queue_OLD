@@ -7,7 +7,7 @@ import Colors from '../../lib/colors';
 export default styles = StyleSheet.create({
   primaryBtn: {
     fontSize: 20,
-    fontWeight: "300"
+    fontWeight: "500"
   },
   btnContainer: {
     padding: 8,

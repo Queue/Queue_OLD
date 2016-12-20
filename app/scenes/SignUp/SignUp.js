@@ -17,7 +17,7 @@ import {
 import KeyboardSpacer from 'react-native-keyboard-spacer';
 
 // Data
-import Firebase from '../../lib/firebase';
+import Data from '../../lib/data';
 
 // Colors
 import Colors from '../../lib/colors';
@@ -55,7 +55,7 @@ export default class SignUp extends Component {
     if (this.state.passwordText !== '' && this.state.passwordText === this.state.passwordConfirmText ) {
 
       // Create a new user
-      Firebase.auth().createUserWithEmailAndPassword(this.state.emailText, this.state.passwordText).catch(
+      Data.firebase.auth().createUserWithEmailAndPassword(this.state.emailText, this.state.passwordText).catch(
         (error) => {
           if (error) {
             console.warn(
@@ -76,8 +76,7 @@ export default class SignUp extends Component {
         passwordConfirmText: ''
       });
 
-      // TODO go to users Queue dashboard instead of 
-      Actions.SignInRoute();
+      Actions.DashboardRoute();
 
     } else {
       console.warn('Enter a password!');

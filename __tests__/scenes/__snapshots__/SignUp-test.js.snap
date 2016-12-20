@@ -148,7 +148,7 @@ exports[`test renders correctly 1`] = `
             Array [
               Object {
                 "fontSize": 20,
-                "fontWeight": "300",
+                "fontWeight": "500",
               },
               Object {
                 "color": "#4AC948",
@@ -187,12 +187,18 @@ exports[`test renders correctly 1`] = `
         allowFontScaling={true}
         ellipsizeMode="tail"
         style={
-          Object {
-            "color": "#4AC948",
-            "fontSize": 14,
-            "padding": 5,
-            "textAlign": "center",
-          }
+          Array [
+            Object {
+              "color": "#4AC948",
+              "fontSize": 14,
+              "padding": 5,
+              "paddingBottom": 15,
+              "textAlign": "center",
+            },
+            Object {
+              "fontSize": 14,
+            },
+          ]
         }>
         Already have an account?
       </Text>

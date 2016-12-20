@@ -26,12 +26,18 @@ exports[`test renders correctly 1`] = `
     allowFontScaling={true}
     ellipsizeMode="tail"
     style={
-      Object {
-        "color": "#4AC948",
-        "fontSize": 14,
-        "padding": 5,
-        "textAlign": "center",
-      }
+      Array [
+        Object {
+          "color": "#4AC948",
+          "fontSize": 14,
+          "padding": 5,
+          "paddingBottom": 15,
+          "textAlign": "center",
+        },
+        Object {
+          "fontSize": 14,
+        },
+      ]
     }>
     Log In
   </Text>
