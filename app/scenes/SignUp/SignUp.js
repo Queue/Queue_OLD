@@ -63,6 +63,15 @@ export default class SignUp extends Component {
               'Code: ' + error.code + '\n' +
               'Message: ' + error.message
             );
+          } else {
+            let user = Data.firebase.auth().currentUser;
+            if (user) {
+              user.sendEmailVerification().then(() => {
+                // Email sent.
+              }, error => {
+                // An error happened.
+              });
+            }      
           }
         }
       );
@@ -93,16 +102,6 @@ export default class SignUp extends Component {
     this.setState({passwordText: text});
   }
 
-  checkConfirmPass(text) {
-    if (text === this.state.passwordText) {
-      this.setState({passwordConfirmColor: Colors.primaryForeground});
-    } else {
-      this.setState({passwordConfirmColor: Colors.error});
-    }
-
-    this.setState({passwordConfirmText: text});
-  }
-
   render() {
     return (
       <View style = {styles.container}>
@@ -123,19 +122,13 @@ export default class SignUp extends Component {
             change = {this.checkPassLength.bind(this)}
             val = {this.state.passwordText}
           />
-          <PasswordField
-            textColor = {this.state.passwordConfirmColor}
-            placeholder = {'Confirm Password'}
-            edit = {this.state.unfocus}
-            change = {this.checkConfirmPass.bind(this)}
-            val = {this.state.passwordConfirmText}
-          />
           <PrimaryButton
             name = {'Sign Up'}
             press = {this.createUser}
           />
           <TextButton
             text={'Already have an account?'}
+            size = {16}
             press={Actions.SignInRoute}
           />
           <KeyboardSpacer />

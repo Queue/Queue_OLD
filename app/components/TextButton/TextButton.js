@@ -16,7 +16,7 @@ export default TextButton = ({press, text, size}) => {
   return (
     <TouchableHighlight
       onPress = {press}
-      underlayColor = {Colors.primaryBackground}>
+      underlayColor = {'transparent'}>
       <Text style = {[styles.textButton, styles.size]}>{text}</Text>
     </TouchableHighlight>
   );

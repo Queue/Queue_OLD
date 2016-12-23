@@ -80,11 +80,12 @@ export default class SignIn extends Component {
           <TextButton
             text = {'Dont have an account?'}
             press = {Actions.SignUpRoute}
-            size = {18}
+            size = {16}
           />
           <TextButton
             text = {'Forgot your password?'}
-            press = {Actions.SignUpRoute}
+            press = {Actions.ForgotRoute}
+            size = {12}
           />
           <KeyboardSpacer />
         </View>

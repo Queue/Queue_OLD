@@ -8,6 +8,7 @@ import { Scene, Router } from 'react-native-router-flux';
 import {
   SignIn,
   SignUp,
+  Forgot,
   Dashboard
 } from '../scenes';
 
@@ -25,6 +26,11 @@ export default Navigation = () => {
         <Scene
           key = {'SignUpRoute'}
           component = {SignUp}
+          hideNavBar = {true}
+        />
+        <Scene
+          key = {'ForgotRoute'}
+          component = {Forgot}
           hideNavBar = {true}
         />
         <Scene
