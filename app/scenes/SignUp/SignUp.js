@@ -39,11 +39,9 @@ export default class SignUp extends Component {
       // Form fields state
       emailText: '',
       passwordText: '',
-      passwordConfirmText: '',
       unfocus: true,
 
       // Color
-      passwordConfirmColor: Colors.primaryForeground,
       passwordColor: Colors.primaryForeground
     };
 
@@ -52,7 +50,7 @@ export default class SignUp extends Component {
   }
 
   createUser() {
-    if (this.state.passwordText !== '' && this.state.passwordText === this.state.passwordConfirmText ) {
+    if (this.state.passwordText !== '') {
 
       // Create a new user
       Data.firebase.auth().createUserWithEmailAndPassword(this.state.emailText, this.state.passwordText).catch(
@@ -81,8 +79,7 @@ export default class SignUp extends Component {
       // Reset fields state
       this.setState({
         emailText: '',
-        passwordText: '',
-        passwordConfirmText: ''
+        passwordText: ''
       });
 
       Actions.DashboardRoute();

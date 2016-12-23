@@ -27,7 +27,8 @@ export default class Dashboard extends Component {
     this.setState({num: this.state.num + 1});
     // run react-native log-ios to see logs
     console.log(this.state.num);
-    //console.warn(JSON.stringify(Data.firebase.auth().currentUser));
+    // console.warn(JSON.stringify(Data.firebase.auth().currentUser));
+    Actions.SignInRoute();
   }
 
   render() {
@@ -43,15 +44,18 @@ export default class Dashboard extends Component {
               press = {this.ping.bind(this)} />
           </View>
         </Col>
+
         <Col style={styles.actionArea}>
           <View style={Layout.container}>
-            <TextButton
-              styles = {styles.logOutButton}
-              text = {'Log Out'}
-              press = {Actions.SignInRoute} />
+
           </View>
         </Col>
-        <Col style={styles.queueList}></Col>
+
+        <Col style={styles.queueList}>
+          <View style={Layout.container}>
+
+          </View>
+        </Col>
 
       </Grid>
     );
@@ -71,13 +75,13 @@ const styles = StyleSheet.create({
   navMenu: {
     borderRightWidth: 1,
     borderColor: Colors.primaryBackground,
-    maxWidth: 130
+    maxWidth: 110
   },
   actionArea: {
     borderRightWidth: 1,
     borderColor: Colors.primaryBackground,
+    minWidth: 525
   },
   queueList: {
-    maxWidth: 320
   }
 });
