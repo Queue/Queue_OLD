@@ -76,7 +76,7 @@ export default class Forgot extends Component {
             press = {this.resetPassword.bind(this)}
           />
           <TextButton
-            size = {15}
+            size = {16}
             text = {'Back↵ '}
             press = {Actions.SignInRoute}
           />
