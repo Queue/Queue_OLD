@@ -8,7 +8,7 @@ import Layout from '../../lib/layout';
 import Colors from '../../lib/colors';
 
 // components
-import { TextButton } from '../../components';
+import { TextButton, QueueList } from '../../components';
 
 // Router Actions see ../../lib/navigation
 import { Actions } from 'react-native-router-flux'
@@ -47,14 +47,11 @@ export default class Dashboard extends Component {
 
         <Col style={styles.actionArea}>
           <View style={Layout.container}>
-
           </View>
         </Col>
 
         <Col style={styles.queueList}>
-          <View style={Layout.container}>
-
-          </View>
+          <QueueList />
         </Col>
 
       </Grid>

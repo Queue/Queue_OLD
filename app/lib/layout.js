@@ -10,7 +10,9 @@ export default Layout = StyleSheet.create({
     padding: 15
   },
   container: {
-    marginTop: 20,
-    padding: 15
+    marginTop: 21,
+    padding: 15,
+    borderTopColor: Colors.primaryBackground,
+    borderTopWidth: 1
   }
 });

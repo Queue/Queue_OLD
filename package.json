@@ -14,7 +14,8 @@
     "react-native-dismiss-keyboard": "^1.0.0",
     "react-native-easy-grid": "^0.1.7",
     "react-native-keyboard-spacer": "^0.3.0",
-    "react-native-router-flux": "^3.37.0"
+    "react-native-router-flux": "^3.37.0",
+    "react-native-swipe-list-view": "^0.3.1"
   },
   "devDependencies": {
     "babel-jest": "17.0.2",
