@@ -6,9 +6,12 @@ export default Colors = {
   primaryBackground : '#eaeaea',
   primaryForeground : '#48C948',
 
+
   text              : '#333333',
   textOpaque        : 'rgb(51,51,51,0.77)',
 
+  info              : '#8FD6D6'
+  success           : '#6CDA6C',
   error             : '#FB5A5A',
   warning           : '#FBA35A',
 

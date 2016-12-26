@@ -2,14 +2,15 @@
 // QueueList styles
 
 import { StyleSheet } from 'react-native';
+import Colors from '../../lib/colors';
 
 export default styles = StyleSheet.create({
 	container: {
-		backgroundColor: '#eaeaea',
+		backgroundColor: Colors.primaryBackground,
 		flex: 1,
     zIndex: 9999,
     marginTop: 21,
-    borderTopColor: '#eaeaea',
+    borderTopColor: Colors.primaryBackground,
     borderTopWidth: 1
 	},
 	backTextWhite: {
@@ -26,7 +27,7 @@ export default styles = StyleSheet.create({
 	},
 	rowBack: {
 		alignItems: 'center',
-		backgroundColor: '#eaeaea',
+		backgroundColor: Colors.primaryBackground,
 		flex: 1,
 		flexDirection: 'row',
 		justifyContent: 'space-between',
@@ -43,11 +44,11 @@ export default styles = StyleSheet.create({
 		width: 75
 	},
 	backRightBtnLeft: {
-		backgroundColor: 'blue',
+		backgroundColor: Colors.info,
 		right: 75
 	},
 	backRightBtnRight: {
-		backgroundColor: 'red',
+		backgroundColor: Colors.error,
 		right: 0
 	},
 	controls: {
