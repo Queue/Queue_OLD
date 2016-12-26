@@ -12,31 +12,15 @@ export default styles = StyleSheet.create({
     borderTopColor: '#eaeaea',
     borderTopWidth: 1
 	},
-	standalone: {
-		marginTop: 30,
-		marginBottom: 30,
-	},
-	standaloneRowFront: {
-		alignItems: 'center',
-		backgroundColor: '#eaeaea',
-		justifyContent: 'center',
-		height: 50,
-	},
-	standaloneRowBack: {
-		backgroundColor: '#8BC645',
-		flex: 1,
-		flexDirection: 'row',
-		justifyContent: 'space-between',
-		padding: 15
-	},
 	backTextWhite: {
 		color: '#FFF'
 	},
 	rowFront: {
-		alignItems: 'center',
 		backgroundColor: 'white',
-		borderBottomColor: '#eaeaea',
-		borderBottomWidth: 1,
+		alignItems: 'flex-start',
+    paddingLeft: 20,
+    marginBottom: 1,
+    paddingRight: 20,
 		justifyContent: 'center',
 		height: 50,
 	},
@@ -50,6 +34,8 @@ export default styles = StyleSheet.create({
 	},
 	backRightBtn: {
 		alignItems: 'center',
+    marginBottom: 1,
+    marginTop: -1,
 		bottom: 0,
 		justifyContent: 'center',
 		position: 'absolute',

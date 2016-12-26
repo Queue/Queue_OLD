@@ -54,7 +54,7 @@ exports[`test renders correctly 1`] = `
           style={
             Array [
               Object {
-                "color": "#4AC948",
+                "color": "#48C948",
                 "fontSize": 14,
                 "padding": 5,
                 "paddingBottom": 15,
@@ -113,7 +113,7 @@ exports[`test renders correctly 1`] = `
         closeOnScroll={true}
         dataSource={
           ListViewDataSource {
-            "items": 20,
+            "items": 10,
           }
         }
         disableLeftSwipe={false}
@@ -187,6 +187,8 @@ exports[`test renders correctly 1`] = `
                     "backgroundColor": "red",
                     "bottom": 0,
                     "justifyContent": "center",
+                    "marginBottom": 1,
+                    "marginTop": -1,
                     "opacity": 1,
                     "position": "absolute",
                     "right": 0,
@@ -214,6 +216,8 @@ exports[`test renders correctly 1`] = `
                       "alignItems": "center",
                       "bottom": 0,
                       "justifyContent": "center",
+                      "marginBottom": 1,
+                      "marginTop": -1,
                       "position": "absolute",
                       "top": 0,
                       "width": 75,
@@ -280,12 +284,13 @@ exports[`test renders correctly 1`] = `
                     "backgroundColor": "transparent",
                   },
                   Object {
-                    "alignItems": "center",
+                    "alignItems": "flex-start",
                     "backgroundColor": "white",
-                    "borderBottomColor": "#eaeaea",
-                    "borderBottomWidth": 1,
                     "height": 50,
                     "justifyContent": "center",
+                    "marginBottom": 1,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
                   },
                 ]
               }
@@ -295,7 +300,8 @@ exports[`test renders correctly 1`] = `
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail">
-                  I\'m {data} in a SwipeListView
+                  1
+                   I\'m in a SwipeListView\'
                 </Text>
               </View>
             </View>
@@ -350,6 +356,8 @@ exports[`test renders correctly 1`] = `
                     "backgroundColor": "red",
                     "bottom": 0,
                     "justifyContent": "center",
+                    "marginBottom": 1,
+                    "marginTop": -1,
                     "opacity": 1,
                     "position": "absolute",
                     "right": 0,
@@ -377,6 +385,8 @@ exports[`test renders correctly 1`] = `
                       "alignItems": "center",
                       "bottom": 0,
                       "justifyContent": "center",
+                      "marginBottom": 1,
+                      "marginTop": -1,
                       "position": "absolute",
                       "top": 0,
                       "width": 75,
@@ -443,12 +453,13 @@ exports[`test renders correctly 1`] = `
                     "backgroundColor": "transparent",
                   },
                   Object {
-                    "alignItems": "center",
+                    "alignItems": "flex-start",
                     "backgroundColor": "white",
-                    "borderBottomColor": "#eaeaea",
-                    "borderBottomWidth": 1,
                     "height": 50,
                     "justifyContent": "center",
+                    "marginBottom": 1,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
                   },
                 ]
               }
@@ -458,7 +469,8 @@ exports[`test renders correctly 1`] = `
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail">
-                  I\'m {data} in a SwipeListView
+                  2
+                   I\'m in a SwipeListView\'
                 </Text>
               </View>
             </View>
@@ -513,6 +525,8 @@ exports[`test renders correctly 1`] = `
                     "backgroundColor": "red",
                     "bottom": 0,
                     "justifyContent": "center",
+                    "marginBottom": 1,
+                    "marginTop": -1,
                     "opacity": 1,
                     "position": "absolute",
                     "right": 0,
@@ -540,6 +554,8 @@ exports[`test renders correctly 1`] = `
                       "alignItems": "center",
                       "bottom": 0,
                       "justifyContent": "center",
+                      "marginBottom": 1,
+                      "marginTop": -1,
                       "position": "absolute",
                       "top": 0,
                       "width": 75,
@@ -606,12 +622,13 @@ exports[`test renders correctly 1`] = `
                     "backgroundColor": "transparent",
                   },
                   Object {
-                    "alignItems": "center",
+                    "alignItems": "flex-start",
                     "backgroundColor": "white",
-                    "borderBottomColor": "#eaeaea",
-                    "borderBottomWidth": 1,
                     "height": 50,
                     "justifyContent": "center",
+                    "marginBottom": 1,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
                   },
                 ]
               }
@@ -621,7 +638,8 @@ exports[`test renders correctly 1`] = `
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail">
-                  I\'m {data} in a SwipeListView
+                  3
+                   I\'m in a SwipeListView\'
                 </Text>
               </View>
             </View>
@@ -676,6 +694,8 @@ exports[`test renders correctly 1`] = `
                     "backgroundColor": "red",
                     "bottom": 0,
                     "justifyContent": "center",
+                    "marginBottom": 1,
+                    "marginTop": -1,
                     "opacity": 1,
                     "position": "absolute",
                     "right": 0,
@@ -703,6 +723,8 @@ exports[`test renders correctly 1`] = `
                       "alignItems": "center",
                       "bottom": 0,
                       "justifyContent": "center",
+                      "marginBottom": 1,
+                      "marginTop": -1,
                       "position": "absolute",
                       "top": 0,
                       "width": 75,
@@ -769,12 +791,13 @@ exports[`test renders correctly 1`] = `
                     "backgroundColor": "transparent",
                   },
                   Object {
-                    "alignItems": "center",
+                    "alignItems": "flex-start",
                     "backgroundColor": "white",
-                    "borderBottomColor": "#eaeaea",
-                    "borderBottomWidth": 1,
                     "height": 50,
                     "justifyContent": "center",
+                    "marginBottom": 1,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
                   },
                 ]
               }
@@ -784,7 +807,8 @@ exports[`test renders correctly 1`] = `
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail">
-                  I\'m {data} in a SwipeListView
+                  4
+                   I\'m in a SwipeListView\'
                 </Text>
               </View>
             </View>
@@ -839,6 +863,8 @@ exports[`test renders correctly 1`] = `
                     "backgroundColor": "red",
                     "bottom": 0,
                     "justifyContent": "center",
+                    "marginBottom": 1,
+                    "marginTop": -1,
                     "opacity": 1,
                     "position": "absolute",
                     "right": 0,
@@ -866,6 +892,8 @@ exports[`test renders correctly 1`] = `
                       "alignItems": "center",
                       "bottom": 0,
                       "justifyContent": "center",
+                      "marginBottom": 1,
+                      "marginTop": -1,
                       "position": "absolute",
                       "top": 0,
                       "width": 75,
@@ -932,12 +960,13 @@ exports[`test renders correctly 1`] = `
                     "backgroundColor": "transparent",
                   },
                   Object {
-                    "alignItems": "center",
+                    "alignItems": "flex-start",
                     "backgroundColor": "white",
-                    "borderBottomColor": "#eaeaea",
-                    "borderBottomWidth": 1,
                     "height": 50,
                     "justifyContent": "center",
+                    "marginBottom": 1,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
                   },
                 ]
               }
@@ -947,7 +976,8 @@ exports[`test renders correctly 1`] = `
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail">
-                  I\'m {data} in a SwipeListView
+                  5
+                   I\'m in a SwipeListView\'
                 </Text>
               </View>
             </View>
@@ -1002,6 +1032,8 @@ exports[`test renders correctly 1`] = `
                     "backgroundColor": "red",
                     "bottom": 0,
                     "justifyContent": "center",
+                    "marginBottom": 1,
+                    "marginTop": -1,
                     "opacity": 1,
                     "position": "absolute",
                     "right": 0,
@@ -1029,6 +1061,8 @@ exports[`test renders correctly 1`] = `
                       "alignItems": "center",
                       "bottom": 0,
                       "justifyContent": "center",
+                      "marginBottom": 1,
+                      "marginTop": -1,
                       "position": "absolute",
                       "top": 0,
                       "width": 75,
@@ -1095,12 +1129,13 @@ exports[`test renders correctly 1`] = `
                     "backgroundColor": "transparent",
                   },
                   Object {
-                    "alignItems": "center",
+                    "alignItems": "flex-start",
                     "backgroundColor": "white",
-                    "borderBottomColor": "#eaeaea",
-                    "borderBottomWidth": 1,
                     "height": 50,
                     "justifyContent": "center",
+                    "marginBottom": 1,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
                   },
                 ]
               }
@@ -1110,7 +1145,8 @@ exports[`test renders correctly 1`] = `
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail">
-                  I\'m {data} in a SwipeListView
+                  6
+                   I\'m in a SwipeListView\'
                 </Text>
               </View>
             </View>
@@ -1165,6 +1201,8 @@ exports[`test renders correctly 1`] = `
                     "backgroundColor": "red",
                     "bottom": 0,
                     "justifyContent": "center",
+                    "marginBottom": 1,
+                    "marginTop": -1,
                     "opacity": 1,
                     "position": "absolute",
                     "right": 0,
@@ -1192,6 +1230,8 @@ exports[`test renders correctly 1`] = `
                       "alignItems": "center",
                       "bottom": 0,
                       "justifyContent": "center",
+                      "marginBottom": 1,
+                      "marginTop": -1,
                       "position": "absolute",
                       "top": 0,
                       "width": 75,
@@ -1258,12 +1298,13 @@ exports[`test renders correctly 1`] = `
                     "backgroundColor": "transparent",
                   },
                   Object {
-                    "alignItems": "center",
+                    "alignItems": "flex-start",
                     "backgroundColor": "white",
-                    "borderBottomColor": "#eaeaea",
-                    "borderBottomWidth": 1,
                     "height": 50,
                     "justifyContent": "center",
+                    "marginBottom": 1,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
                   },
                 ]
               }
@@ -1273,7 +1314,8 @@ exports[`test renders correctly 1`] = `
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail">
-                  I\'m {data} in a SwipeListView
+                  7
+                   I\'m in a SwipeListView\'
                 </Text>
               </View>
             </View>
@@ -1328,6 +1370,8 @@ exports[`test renders correctly 1`] = `
                     "backgroundColor": "red",
                     "bottom": 0,
                     "justifyContent": "center",
+                    "marginBottom": 1,
+                    "marginTop": -1,
                     "opacity": 1,
                     "position": "absolute",
                     "right": 0,
@@ -1355,6 +1399,8 @@ exports[`test renders correctly 1`] = `
                       "alignItems": "center",
                       "bottom": 0,
                       "justifyContent": "center",
+                      "marginBottom": 1,
+                      "marginTop": -1,
                       "position": "absolute",
                       "top": 0,
                       "width": 75,
@@ -1421,12 +1467,13 @@ exports[`test renders correctly 1`] = `
                     "backgroundColor": "transparent",
                   },
                   Object {
-                    "alignItems": "center",
+                    "alignItems": "flex-start",
                     "backgroundColor": "white",
-                    "borderBottomColor": "#eaeaea",
-                    "borderBottomWidth": 1,
                     "height": 50,
                     "justifyContent": "center",
+                    "marginBottom": 1,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
                   },
                 ]
               }
@@ -1436,7 +1483,8 @@ exports[`test renders correctly 1`] = `
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail">
-                  I\'m {data} in a SwipeListView
+                  8
+                   I\'m in a SwipeListView\'
                 </Text>
               </View>
             </View>
@@ -1491,6 +1539,8 @@ exports[`test renders correctly 1`] = `
                     "backgroundColor": "red",
                     "bottom": 0,
                     "justifyContent": "center",
+                    "marginBottom": 1,
+                    "marginTop": -1,
                     "opacity": 1,
                     "position": "absolute",
                     "right": 0,
@@ -1518,6 +1568,8 @@ exports[`test renders correctly 1`] = `
                       "alignItems": "center",
                       "bottom": 0,
                       "justifyContent": "center",
+                      "marginBottom": 1,
+                      "marginTop": -1,
                       "position": "absolute",
                       "top": 0,
                       "width": 75,
@@ -1584,12 +1636,13 @@ exports[`test renders correctly 1`] = `
                     "backgroundColor": "transparent",
                   },
                   Object {
-                    "alignItems": "center",
+                    "alignItems": "flex-start",
                     "backgroundColor": "white",
-                    "borderBottomColor": "#eaeaea",
-                    "borderBottomWidth": 1,
                     "height": 50,
                     "justifyContent": "center",
+                    "marginBottom": 1,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
                   },
                 ]
               }
@@ -1599,7 +1652,8 @@ exports[`test renders correctly 1`] = `
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail">
-                  I\'m {data} in a SwipeListView
+                  9
+                   I\'m in a SwipeListView\'
                 </Text>
               </View>
             </View>
@@ -1654,6 +1708,8 @@ exports[`test renders correctly 1`] = `
                     "backgroundColor": "red",
                     "bottom": 0,
                     "justifyContent": "center",
+                    "marginBottom": 1,
+                    "marginTop": -1,
                     "opacity": 1,
                     "position": "absolute",
                     "right": 0,
@@ -1681,6 +1737,8 @@ exports[`test renders correctly 1`] = `
                       "alignItems": "center",
                       "bottom": 0,
                       "justifyContent": "center",
+                      "marginBottom": 1,
+                      "marginTop": -1,
                       "position": "absolute",
                       "top": 0,
                       "width": 75,
@@ -1747,12 +1805,13 @@ exports[`test renders correctly 1`] = `
                     "backgroundColor": "transparent",
                   },
                   Object {
-                    "alignItems": "center",
+                    "alignItems": "flex-start",
                     "backgroundColor": "white",
-                    "borderBottomColor": "#eaeaea",
-                    "borderBottomWidth": 1,
                     "height": 50,
                     "justifyContent": "center",
+                    "marginBottom": 1,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
                   },
                 ]
               }
@@ -1762,7 +1821,8 @@ exports[`test renders correctly 1`] = `
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail">
-                  I\'m {data} in a SwipeListView
+                  10
+                   I\'m in a SwipeListView\'
                 </Text>
               </View>
             </View>

@@ -28,7 +28,7 @@ exports[`test renders correctly 1`] = `
     style={
       Array [
         Object {
-          "color": "#4AC948",
+          "color": "#48C948",
           "fontSize": 14,
           "padding": 5,
           "paddingBottom": 15,

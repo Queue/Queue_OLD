@@ -18,7 +18,7 @@ exports[`test renders correctly 1`] = `
         "paddingRight": 15,
       },
       Object {
-        "color": "#4AC948",
+        "color": "#48C948",
       },
     ]
   }

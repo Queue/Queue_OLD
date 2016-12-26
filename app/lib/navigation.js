@@ -37,6 +37,8 @@ export default Navigation = () => {
           key = {'DashboardRoute'}
           component = {Dashboard}
           hideNavBar = {true}
+          panHandlers={null}
+          direction = {'vertical'}
         />
       </Scene>
     </Router>
