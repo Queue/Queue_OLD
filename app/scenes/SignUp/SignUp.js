@@ -28,6 +28,8 @@ import { Actions } from 'react-native-router-flux'
 // Dismiss keyboard
 import dismissKeyboard from 'react-native-dismiss-keyboard';
 
+import Common from '../../lib/common';
+
 export default class SignUp extends Component {
   constructor(props) {
     super(props);
@@ -42,6 +44,7 @@ export default class SignUp extends Component {
       unfocus: true,
 
       // Color
+      emailColor: Colors.primaryForeground,
       passwordColor: Colors.primaryForeground
     };
 
@@ -50,42 +53,40 @@ export default class SignUp extends Component {
   }
 
   createUser() {
-    if (this.state.passwordText !== '') {
+    if (Common.validateEmail(this.state.email)) {
+      if (this.state.passwordText !== '') {
 
-      // Create a new user
-      Data.firebase.auth().createUserWithEmailAndPassword(this.state.emailText, this.state.passwordText).catch(
-        (error) => {
-          if (error) {
-            console.warn(
-              'ERROR' + '\n' +
-              'Code: ' + error.code + '\n' +
-              'Message: ' + error.message
-            );
-          } else {
-            let user = Data.firebase.auth().currentUser;
-            if (user) {
-              user.sendEmailVerification().then(() => {
-                // Email sent.
-              }, error => {
-                // An error happened.
-              });
-            }      
+        // Create a new user
+        Data.firebase.auth().createUserWithEmailAndPassword(this.state.emailText, this.state.passwordText).catch(
+          (error) => {
+            if (error) {
+              Common.error(error.code, error.message);
+            } else {
+              let user = Data.firebase.auth().currentUser;
+              if (user) {
+                user.sendEmailVerification().then(() => {
+                  Common.log('emailsent', 'success');
+                }, (error) => {
+                  Common.log(error.code, error.message);
+                });
+              }
+            }
           }
-        }
-      );
+        );
 
-      dismissKeyboard();
+        dismissKeyboard();
 
-      // Reset fields state
-      this.setState({
-        emailText: '',
-        passwordText: ''
-      });
+        // Reset fields state
+        this.setState({
+          emailText: '',
+          passwordText: ''
+        });
 
-      Actions.DashboardRoute();
+        Actions.DashboardRoute();
 
-    } else {
-      console.warn('Enter a password!');
+      } else {
+        console.warn('Enter a password!');
+      }
     }
   }
 

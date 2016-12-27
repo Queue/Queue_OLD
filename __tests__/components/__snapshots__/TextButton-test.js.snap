@@ -30,11 +30,13 @@ exports[`test renders correctly 1`] = `
         Object {
           "color": "#48C948",
           "fontSize": 14,
+          "letterSpacing": 1,
           "padding": 5,
           "paddingBottom": 15,
           "textAlign": "center",
         },
         Object {
+          "fontFamily": "Helvetica Neue",
           "fontSize": 14,
         },
       ]

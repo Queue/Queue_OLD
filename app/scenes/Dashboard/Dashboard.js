@@ -14,6 +14,7 @@ import { TextButton, QueueList } from '../../components';
 import { Actions } from 'react-native-router-flux'
 
 import Data from '../../lib/data';
+import Fonts from '../../lib/fonts';
 
 export default class Dashboard extends Component {
   constructor(props) {
@@ -25,9 +26,7 @@ export default class Dashboard extends Component {
   // test purposes only
   ping() {
     this.setState({num: this.state.num + 1});
-    // run react-native log-ios to see logs
     console.log(this.state.num);
-    // console.warn(JSON.stringify(Data.firebase.auth().currentUser));
     Actions.SignInRoute();
   }
 
@@ -39,7 +38,8 @@ export default class Dashboard extends Component {
           <View style={Layout.container}>
             <TextButton
               styles = {styles.logOutButton}
-              size={77}
+              font = {Fonts.brand}
+              size={100}
               text = {'Q'}
               press = {this.ping.bind(this)} />
           </View>

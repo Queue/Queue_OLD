@@ -1,6 +1,7 @@
 //
 // fonts
 
-export default const fonts = {
-  brand : fontFamily: 'airstream'
+export default Fonts = {
+  brand   : 'airstream',
+  content : 'Helvetica Neue'
 };

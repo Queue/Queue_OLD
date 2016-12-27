@@ -3,11 +3,13 @@
 
 import { StyleSheet } from 'react-native';
 import Colors from '../../lib/colors';
+import Fonts from '../../lib/fonts';
 
 const inputHeight = 40;
 
 export default styles = StyleSheet.create({
   passwordField: {
+    fontFamily: Fonts.content,
     color: Colors.primaryForeground,
     margin: 10,
     paddingLeft: 15,

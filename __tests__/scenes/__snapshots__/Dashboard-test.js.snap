@@ -56,12 +56,14 @@ exports[`test renders correctly 1`] = `
               Object {
                 "color": "#48C948",
                 "fontSize": 14,
+                "letterSpacing": 1,
                 "padding": 5,
                 "paddingBottom": 15,
                 "textAlign": "center",
               },
               Object {
-                "fontSize": 77,
+                "fontFamily": "airstream",
+                "fontSize": 100,
               },
             ]
           }>
@@ -134,7 +136,7 @@ exports[`test renders correctly 1`] = `
         removeClippedSubviews={true}
         renderHiddenRow={[Function]}
         renderRow={[Function]}
-        rightOpenValue={-150}
+        rightOpenValue={-225}
         scrollEventThrottle={50}
         scrollRenderAheadDistance={1000}
         stickyHeaderIndices={Array []}>
@@ -184,7 +186,7 @@ exports[`test renders correctly 1`] = `
                 style={
                   Object {
                     "alignItems": "center",
-                    "backgroundColor": "red",
+                    "backgroundColor": "#FB5A5A",
                     "bottom": 0,
                     "justifyContent": "center",
                     "marginBottom": 1,
@@ -223,7 +225,7 @@ exports[`test renders correctly 1`] = `
                       "width": 75,
                     },
                     Object {
-                      "backgroundColor": "blue",
+                      "backgroundColor": "#8FD6D6",
                       "right": 75,
                     },
                   ]
@@ -238,6 +240,37 @@ exports[`test renders correctly 1`] = `
                     }
                   }>
                   Text
+                </Text>
+              </View>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "bottom": 0,
+                      "justifyContent": "center",
+                      "marginBottom": 1,
+                      "marginTop": -1,
+                      "position": "absolute",
+                      "top": 0,
+                      "width": 75,
+                    },
+                    Object {
+                      "backgroundColor": "#333333",
+                      "right": 150,
+                    },
+                  ]
+                }>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#FFF",
+                    }
+                  }>
+                  More
                 </Text>
               </View>
             </View>
@@ -353,7 +386,7 @@ exports[`test renders correctly 1`] = `
                 style={
                   Object {
                     "alignItems": "center",
-                    "backgroundColor": "red",
+                    "backgroundColor": "#FB5A5A",
                     "bottom": 0,
                     "justifyContent": "center",
                     "marginBottom": 1,
@@ -392,7 +425,7 @@ exports[`test renders correctly 1`] = `
                       "width": 75,
                     },
                     Object {
-                      "backgroundColor": "blue",
+                      "backgroundColor": "#8FD6D6",
                       "right": 75,
                     },
                   ]
@@ -407,6 +440,37 @@ exports[`test renders correctly 1`] = `
                     }
                   }>
                   Text
+                </Text>
+              </View>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "bottom": 0,
+                      "justifyContent": "center",
+                      "marginBottom": 1,
+                      "marginTop": -1,
+                      "position": "absolute",
+                      "top": 0,
+                      "width": 75,
+                    },
+                    Object {
+                      "backgroundColor": "#333333",
+                      "right": 150,
+                    },
+                  ]
+                }>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#FFF",
+                    }
+                  }>
+                  More
                 </Text>
               </View>
             </View>
@@ -522,7 +586,7 @@ exports[`test renders correctly 1`] = `
                 style={
                   Object {
                     "alignItems": "center",
-                    "backgroundColor": "red",
+                    "backgroundColor": "#FB5A5A",
                     "bottom": 0,
                     "justifyContent": "center",
                     "marginBottom": 1,
@@ -561,7 +625,7 @@ exports[`test renders correctly 1`] = `
                       "width": 75,
                     },
                     Object {
-                      "backgroundColor": "blue",
+                      "backgroundColor": "#8FD6D6",
                       "right": 75,
                     },
                   ]
@@ -576,6 +640,37 @@ exports[`test renders correctly 1`] = `
                     }
                   }>
                   Text
+                </Text>
+              </View>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "bottom": 0,
+                      "justifyContent": "center",
+                      "marginBottom": 1,
+                      "marginTop": -1,
+                      "position": "absolute",
+                      "top": 0,
+                      "width": 75,
+                    },
+                    Object {
+                      "backgroundColor": "#333333",
+                      "right": 150,
+                    },
+                  ]
+                }>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#FFF",
+                    }
+                  }>
+                  More
                 </Text>
               </View>
             </View>
@@ -691,7 +786,7 @@ exports[`test renders correctly 1`] = `
                 style={
                   Object {
                     "alignItems": "center",
-                    "backgroundColor": "red",
+                    "backgroundColor": "#FB5A5A",
                     "bottom": 0,
                     "justifyContent": "center",
                     "marginBottom": 1,
@@ -730,7 +825,7 @@ exports[`test renders correctly 1`] = `
                       "width": 75,
                     },
                     Object {
-                      "backgroundColor": "blue",
+                      "backgroundColor": "#8FD6D6",
                       "right": 75,
                     },
                   ]
@@ -745,6 +840,37 @@ exports[`test renders correctly 1`] = `
                     }
                   }>
                   Text
+                </Text>
+              </View>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "bottom": 0,
+                      "justifyContent": "center",
+                      "marginBottom": 1,
+                      "marginTop": -1,
+                      "position": "absolute",
+                      "top": 0,
+                      "width": 75,
+                    },
+                    Object {
+                      "backgroundColor": "#333333",
+                      "right": 150,
+                    },
+                  ]
+                }>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#FFF",
+                    }
+                  }>
+                  More
                 </Text>
               </View>
             </View>
@@ -860,7 +986,7 @@ exports[`test renders correctly 1`] = `
                 style={
                   Object {
                     "alignItems": "center",
-                    "backgroundColor": "red",
+                    "backgroundColor": "#FB5A5A",
                     "bottom": 0,
                     "justifyContent": "center",
                     "marginBottom": 1,
@@ -899,7 +1025,7 @@ exports[`test renders correctly 1`] = `
                       "width": 75,
                     },
                     Object {
-                      "backgroundColor": "blue",
+                      "backgroundColor": "#8FD6D6",
                       "right": 75,
                     },
                   ]
@@ -914,6 +1040,37 @@ exports[`test renders correctly 1`] = `
                     }
                   }>
                   Text
+                </Text>
+              </View>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "bottom": 0,
+                      "justifyContent": "center",
+                      "marginBottom": 1,
+                      "marginTop": -1,
+                      "position": "absolute",
+                      "top": 0,
+                      "width": 75,
+                    },
+                    Object {
+                      "backgroundColor": "#333333",
+                      "right": 150,
+                    },
+                  ]
+                }>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#FFF",
+                    }
+                  }>
+                  More
                 </Text>
               </View>
             </View>
@@ -1029,7 +1186,7 @@ exports[`test renders correctly 1`] = `
                 style={
                   Object {
                     "alignItems": "center",
-                    "backgroundColor": "red",
+                    "backgroundColor": "#FB5A5A",
                     "bottom": 0,
                     "justifyContent": "center",
                     "marginBottom": 1,
@@ -1068,7 +1225,7 @@ exports[`test renders correctly 1`] = `
                       "width": 75,
                     },
                     Object {
-                      "backgroundColor": "blue",
+                      "backgroundColor": "#8FD6D6",
                       "right": 75,
                     },
                   ]
@@ -1083,6 +1240,37 @@ exports[`test renders correctly 1`] = `
                     }
                   }>
                   Text
+                </Text>
+              </View>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "bottom": 0,
+                      "justifyContent": "center",
+                      "marginBottom": 1,
+                      "marginTop": -1,
+                      "position": "absolute",
+                      "top": 0,
+                      "width": 75,
+                    },
+                    Object {
+                      "backgroundColor": "#333333",
+                      "right": 150,
+                    },
+                  ]
+                }>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#FFF",
+                    }
+                  }>
+                  More
                 </Text>
               </View>
             </View>
@@ -1198,7 +1386,7 @@ exports[`test renders correctly 1`] = `
                 style={
                   Object {
                     "alignItems": "center",
-                    "backgroundColor": "red",
+                    "backgroundColor": "#FB5A5A",
                     "bottom": 0,
                     "justifyContent": "center",
                     "marginBottom": 1,
@@ -1237,7 +1425,7 @@ exports[`test renders correctly 1`] = `
                       "width": 75,
                     },
                     Object {
-                      "backgroundColor": "blue",
+                      "backgroundColor": "#8FD6D6",
                       "right": 75,
                     },
                   ]
@@ -1252,6 +1440,37 @@ exports[`test renders correctly 1`] = `
                     }
                   }>
                   Text
+                </Text>
+              </View>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "bottom": 0,
+                      "justifyContent": "center",
+                      "marginBottom": 1,
+                      "marginTop": -1,
+                      "position": "absolute",
+                      "top": 0,
+                      "width": 75,
+                    },
+                    Object {
+                      "backgroundColor": "#333333",
+                      "right": 150,
+                    },
+                  ]
+                }>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#FFF",
+                    }
+                  }>
+                  More
                 </Text>
               </View>
             </View>
@@ -1367,7 +1586,7 @@ exports[`test renders correctly 1`] = `
                 style={
                   Object {
                     "alignItems": "center",
-                    "backgroundColor": "red",
+                    "backgroundColor": "#FB5A5A",
                     "bottom": 0,
                     "justifyContent": "center",
                     "marginBottom": 1,
@@ -1406,7 +1625,7 @@ exports[`test renders correctly 1`] = `
                       "width": 75,
                     },
                     Object {
-                      "backgroundColor": "blue",
+                      "backgroundColor": "#8FD6D6",
                       "right": 75,
                     },
                   ]
@@ -1421,6 +1640,37 @@ exports[`test renders correctly 1`] = `
                     }
                   }>
                   Text
+                </Text>
+              </View>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "bottom": 0,
+                      "justifyContent": "center",
+                      "marginBottom": 1,
+                      "marginTop": -1,
+                      "position": "absolute",
+                      "top": 0,
+                      "width": 75,
+                    },
+                    Object {
+                      "backgroundColor": "#333333",
+                      "right": 150,
+                    },
+                  ]
+                }>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#FFF",
+                    }
+                  }>
+                  More
                 </Text>
               </View>
             </View>
@@ -1536,7 +1786,7 @@ exports[`test renders correctly 1`] = `
                 style={
                   Object {
                     "alignItems": "center",
-                    "backgroundColor": "red",
+                    "backgroundColor": "#FB5A5A",
                     "bottom": 0,
                     "justifyContent": "center",
                     "marginBottom": 1,
@@ -1575,7 +1825,7 @@ exports[`test renders correctly 1`] = `
                       "width": 75,
                     },
                     Object {
-                      "backgroundColor": "blue",
+                      "backgroundColor": "#8FD6D6",
                       "right": 75,
                     },
                   ]
@@ -1590,6 +1840,37 @@ exports[`test renders correctly 1`] = `
                     }
                   }>
                   Text
+                </Text>
+              </View>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "bottom": 0,
+                      "justifyContent": "center",
+                      "marginBottom": 1,
+                      "marginTop": -1,
+                      "position": "absolute",
+                      "top": 0,
+                      "width": 75,
+                    },
+                    Object {
+                      "backgroundColor": "#333333",
+                      "right": 150,
+                    },
+                  ]
+                }>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#FFF",
+                    }
+                  }>
+                  More
                 </Text>
               </View>
             </View>
@@ -1705,7 +1986,7 @@ exports[`test renders correctly 1`] = `
                 style={
                   Object {
                     "alignItems": "center",
-                    "backgroundColor": "red",
+                    "backgroundColor": "#FB5A5A",
                     "bottom": 0,
                     "justifyContent": "center",
                     "marginBottom": 1,
@@ -1744,7 +2025,7 @@ exports[`test renders correctly 1`] = `
                       "width": 75,
                     },
                     Object {
-                      "backgroundColor": "blue",
+                      "backgroundColor": "#8FD6D6",
                       "right": 75,
                     },
                   ]
@@ -1759,6 +2040,37 @@ exports[`test renders correctly 1`] = `
                     }
                   }>
                   Text
+                </Text>
+              </View>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "bottom": 0,
+                      "justifyContent": "center",
+                      "marginBottom": 1,
+                      "marginTop": -1,
+                      "position": "absolute",
+                      "top": 0,
+                      "width": 75,
+                    },
+                    Object {
+                      "backgroundColor": "#333333",
+                      "right": 150,
+                    },
+                  ]
+                }>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#FFF",
+                    }
+                  }>
+                  More
                 </Text>
               </View>
             </View>

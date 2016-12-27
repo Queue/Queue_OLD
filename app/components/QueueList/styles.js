@@ -51,6 +51,10 @@ export default styles = StyleSheet.create({
 		backgroundColor: Colors.error,
 		right: 0
 	},
+  moreButton: {
+    backgroundColor: Colors.text,
+    right: 150
+  },
 	controls: {
 		alignItems: 'center',
 		marginBottom: 30
