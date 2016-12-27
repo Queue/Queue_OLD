@@ -58,9 +58,6 @@ export default class QueueList extends Component {
         <View style={[styles.backRightBtn, styles.backRightBtnLeft]}>
           <Text style={styles.backTextWhite}>{'Text'}</Text>
         </View>
-        <View style={[styles.backRightBtn, styles.moreButton]}>
-          <Text style={styles.backTextWhite}>{'More'}</Text>
-        </View>
       </View>
     );
   }
@@ -72,7 +69,7 @@ export default class QueueList extends Component {
           dataSource = {this.ds.cloneWithRows(this.state.listViewData)}
           renderRow = {this.row.bind(this)}
           renderHiddenRow = {this.hiddenRow.bind(this)}
-          rightOpenValue = {-225}
+          rightOpenValue = {-150}
         />
       </View>
     );
