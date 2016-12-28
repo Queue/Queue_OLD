@@ -52,7 +52,7 @@ export default class QueueList extends Component {
       <View style={styles.rowBack}>
         <TouchableOpacity
           style={[styles.backRightBtn, styles.backRightBtnRight]}
-          onPress={this.deleteRow.bind(this)}>
+          onPress={() => this.deleteRow}>
           <Text style={styles.backTextWhite}>{'Delete'}</Text>
         </TouchableOpacity>
         <View style={[styles.backRightBtn, styles.backRightBtnLeft]}>

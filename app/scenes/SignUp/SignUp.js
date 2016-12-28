@@ -47,50 +47,40 @@ export default class SignUp extends Component {
       emailColor: Colors.primaryForeground,
       passwordColor: Colors.primaryForeground
     };
-
-    // Bind all functions
-    this.createUser = this.createUser.bind(this);
   }
 
   createUser() {
-    if (Common.validateEmail(this.state.email)) {
-      if (this.state.passwordText !== '') {
+    if (this.state.passwordText !== '') {
 
-        // Create a new user
-        Data.firebase.auth().createUserWithEmailAndPassword(this.state.emailText, this.state.passwordText).catch(
-          (error) => {
-            if (error) {
-              Common.error(error.code, error.message);
-            } else {
-              let user = Data.firebase.auth().currentUser;
-              if (user) {
-                user.sendEmailVerification().then(() => {
-                  Common.log('emailsent', 'success');
-                }, (error) => {
-                  Common.log(error.code, error.message);
-                });
-              }
-            }
-          }
-        );
+      // Create a new user
+      Data.Auth.signUp(this.state.emailText, this.state.passwordText);
 
-        dismissKeyboard();
+      dismissKeyboard();
 
-        // Reset fields state
-        this.setState({
-          emailText: '',
-          passwordText: ''
-        });
+      // Reset fields state
+      this.setState({
+        emailText: '',
+        passwordText: ''
+      });
 
-        Actions.DashboardRoute();
+      Actions.DashboardRoute();
 
-      } else {
-        console.warn('Enter a password!');
-      }
+    } else {
+      console.warn('Enter a password!');
     }
   }
 
-  checkPassLength(text) {
+  checkEmail(text) {
+    if (text.length >= 6) {
+      this.setState({emailColor: Colors.primaryForeground});
+    } else {
+      this.setState({emailColor: Colors.error});
+    }
+
+    this.setState({emailText: text});
+  }
+
+  checkPass(text) {
     if (text.length >= 6) {
       this.setState({passwordColor: Colors.primaryForeground});
     } else {
@@ -111,18 +101,18 @@ export default class SignUp extends Component {
           <EmailField
             placeholder = {'Email'}
             focus={this.state.focus}
-            change = {(text) => this.setState({emailText: text})}
+            change = {this.checkEmail.bind(this)}
             val = {this.state.emailText}
           />
           <PasswordField
             textColor = {this.state.passwordColor}
             placeholder = {'Password'}
-            change = {this.checkPassLength.bind(this)}
+            change = {this.checkPass.bind(this)}
             val = {this.state.passwordText}
           />
           <PrimaryButton
             name = {'Sign Up'}
-            press = {this.createUser}
+            press = {this.createUser.bind(this)}
           />
           <TextButton
             text={'Already have an account?'}

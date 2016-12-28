@@ -16,6 +16,8 @@ import { Actions } from 'react-native-router-flux'
 import Data from '../../lib/data';
 import Fonts from '../../lib/fonts';
 
+import * as firebase from 'firebase';
+
 export default class Dashboard extends Component {
   constructor(props) {
     super(props);
@@ -25,9 +27,7 @@ export default class Dashboard extends Component {
 
   // test purposes only
   ping() {
-    this.setState({num: this.state.num + 1});
-    console.log(this.state.num);
-    Actions.SignInRoute();
+    console.log(Data.Auth.user().providerData[0].uid);
   }
 
   render() {

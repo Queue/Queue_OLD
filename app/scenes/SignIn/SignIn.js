@@ -18,11 +18,14 @@ import {
   TextButton
 } from '../../components';
 
+import Common from '../../lib/common';
+import Data from '../../lib/data';
+
 // So the keyboard doesnt get in the way
 import KeyboardSpacer from 'react-native-keyboard-spacer';
 
-// Data
-//import Firebase from '../../lib/firebase';
+// dissmiss the keayboard
+import dismissKeyboard from 'react-native-dismiss-keyboard';
 
 // Router
 import { Actions } from 'react-native-router-flux';
@@ -32,26 +35,36 @@ export default class SignIn extends Component {
     super(props);
 
     this.state = {
-      num: 0,
       emailText: '',
       passwordText: ''
     };
-
-    this.pressBtn = this.pressBtn.bind(this);
-    this.setEmailText = this.setEmailText.bind(this);
-    this.setPasswordText = this.setPasswordText.bind(this);
   }
 
-  pressBtn() {
-    return () => this.setState({num: this.state.num + 1});
-  }
+  signInUser() {
+    if (this.state.emailText !== '' && this.state.passwordText !== '') {
 
-  setEmailText() {
-    return (text) => this.setState({emailText: text});
-  }
+      // sign in user
+      let signedIn = () => {
+        Data.Auth.signIn(this.state.emailText, this.state.passwordText);
+      }
 
-  setPasswordText() {
-    return (text) => this.setState({passwordText: text});
+      dismissKeyboard();
+
+      // Reset fields state
+      this.setState({
+        emailText: '',
+        passwordText: ''
+      });
+
+      if (signedIn) {
+        Actions.DashboardRoute();  
+      } else {
+        Common.warn('Incorrect email and password, try again.');
+      }
+
+    } else {
+      Common.error('86', 'Check your email and password.');
+    }
   }
 
   render() {
@@ -64,18 +77,18 @@ export default class SignIn extends Component {
           </Text>
           <EmailField
             placeholder = {'Email'}
-            change = {this.setEmailText()}
+            change = {(text) => this.setState({emailText: text})}
             val = {this.state.emailText}
           />
           <PasswordField
             placeholder = {'Password'}
             secure = {true}
-            change = {this.setPasswordText()}
+            change = {(text) => this.setState({passwordText: text})}
             val = {this.state.passwordText}
           />
           <PrimaryButton
             name = {'Sign In'}
-            press = {Actions.DashboardRoute}
+            press = {this.signInUser.bind(this)}
           />
           <TextButton
             text = {'Dont have an account?'}
