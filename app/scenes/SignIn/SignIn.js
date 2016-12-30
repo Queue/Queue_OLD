@@ -41,12 +41,14 @@ export default class SignIn extends Component {
   }
 
   signInUser() {
-    if (this.state.emailText !== '' && this.state.passwordText !== '') {
+    let email = this.state.emailText,
+        password = this.state.passwordText;
 
+    if (password !== '' && Common.validateEmail(email)) {
       // sign in user
-      let signedIn = () => {
-        Data.Auth.signIn(this.state.emailText, this.state.passwordText);
-      }
+      Data.Auth.signIn(email, password);
+
+      console.log(Data.Auth.signIn(email, password));
 
       dismissKeyboard();
 
@@ -56,18 +58,21 @@ export default class SignIn extends Component {
         passwordText: ''
       });
 
-      if (signedIn) {
-        Actions.DashboardRoute();  
+      if (Data.Auth.user()) {
+        Actions.DashboardRoute();
       } else {
-        Common.warn('Incorrect email and password, try again.');
+        Common.error('Error', 'Incorrect email and password.');
       }
 
     } else {
-      Common.error('86', 'Check your email and password.');
+      Common.error('Error', 'Check your email and password.');
     }
   }
 
   render() {
+    let email = this.state.emailText,
+        password = this.state.passwordText;
+
     return (
       <View style = {styles.container}>
         <View style = {styles.wrapper}>
@@ -78,13 +83,13 @@ export default class SignIn extends Component {
           <EmailField
             placeholder = {'Email'}
             change = {(text) => this.setState({emailText: text})}
-            val = {this.state.emailText}
+            val = {email}
           />
           <PasswordField
             placeholder = {'Password'}
             secure = {true}
             change = {(text) => this.setState({passwordText: text})}
-            val = {this.state.passwordText}
+            val = {password}
           />
           <PrimaryButton
             name = {'Sign In'}

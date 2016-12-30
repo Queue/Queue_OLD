@@ -35,13 +35,9 @@ export default class SignUp extends Component {
     super(props);
 
     this.state = {
-      // Focus bool
-      focus: false,
-
       // Form fields state
       emailText: '',
       passwordText: '',
-      unfocus: true,
 
       // Color
       emailColor: Colors.primaryForeground,
@@ -50,10 +46,18 @@ export default class SignUp extends Component {
   }
 
   createUser() {
-    if (this.state.passwordText !== '') {
+    let email = this.state.emailText,
+        password = this.state.passwordText;
 
+    if (!Common.validateEmail(email)) {
+      return Common.error('Error', 'Enter a valid email.');
+    }
+
+    if (password === '' || password.length < 8) {
+      Common.error('Error', 'Enter a valid password.\n(Eight characters or more)');
+    } else {
       // Create a new user
-      Data.Auth.signUp(this.state.emailText, this.state.passwordText);
+      Data.Auth.signUp(email, password);
 
       dismissKeyboard();
 
@@ -64,33 +68,35 @@ export default class SignUp extends Component {
       });
 
       Actions.DashboardRoute();
-
-    } else {
-      console.warn('Enter a password!');
     }
   }
 
   checkEmail(text) {
-    if (text.length >= 6) {
+    if (Common.validateEmail(text)) {
       this.setState({emailColor: Colors.primaryForeground});
     } else {
-      this.setState({emailColor: Colors.error});
+      this.setState({emailColor: Colors.warning});
     }
 
     this.setState({emailText: text});
   }
 
   checkPass(text) {
-    if (text.length >= 6) {
+    if (text.length >= 8) {
       this.setState({passwordColor: Colors.primaryForeground});
     } else {
-      this.setState({passwordColor: Colors.error});
+      this.setState({passwordColor: Colors.warning});
     }
 
     this.setState({passwordText: text});
   }
 
   render() {
+    let email = this.state.emailText,
+        password = this.state.passwordText,
+        emailColor = this.state.emailColor,
+        passColor = this.state.passwordColor;
+
     return (
       <View style = {styles.container}>
         <View style = {styles.wrapper}>
@@ -99,16 +105,16 @@ export default class SignUp extends Component {
             Queue
           </Text>
           <EmailField
+            textColor = {emailColor}
             placeholder = {'Email'}
-            focus={this.state.focus}
             change = {this.checkEmail.bind(this)}
-            val = {this.state.emailText}
+            val = {email}
           />
           <PasswordField
-            textColor = {this.state.passwordColor}
+            textColor = {passColor}
             placeholder = {'Password'}
             change = {this.checkPass.bind(this)}
-            val = {this.state.passwordText}
+            val = {password}
           />
           <PrimaryButton
             name = {'Sign Up'}

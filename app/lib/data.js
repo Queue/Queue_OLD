@@ -22,7 +22,7 @@ export default Data = {
     // Sign in method
     signIn(email, password) {
       Firebase.auth().signInWithEmailAndPassword(email, password).then(() => {
-        Common.log('68', 'Email Success');
+        Common.log('Success', 'Email Success');
         return true;
       }, (error) => {
         Common.log(error.code, error.message);
@@ -36,7 +36,7 @@ export default Data = {
         let user = Firebase.auth().currentUser;
         if (user) {
           user.sendEmailVerification().then(() => {
-            Common.log('68', 'Email Success');
+            Common.log('Success', 'Email Success');
             return true;
           }, (error) => {
             Common.log(error.code, error.message);
@@ -52,7 +52,18 @@ export default Data = {
     // Sign out method
     signOut() {
       Firebase.auth().signOut().then(() => {
-        Common.log('68', 'Email Success');
+        Common.log('Success', 'Email Success');
+        return true;
+      }, (error) => {
+        Common.log(error.code, error.message);
+        return false;
+      });
+    },
+
+    // Reset pass email method
+    resetPassEmail(email) {
+      Firebase.auth().sendPasswordResetEmail(emailAddress).then(() => {
+        Common.log('Success', 'Email Success');
         return true;
       }, (error) => {
         Common.log(error.code, error.message);

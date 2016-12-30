@@ -13,40 +13,39 @@ export default class PasswordField extends Component {
     this.state = {
       hide: true
     };
-
-    // use the same styles object to add prop
-    // changes so it can be controlled by state
-    // in higher level components (scenes)
-    styles.props = {
-      color: this.props.textColor
-    };
   }
 
   showPass() {
-    return this.setState({
+    this.setState({
       hide: !this.state.hide
     });
   }
 
   render() {
-    const EYE = '\uD83D\uDC41';
+    let eyeOfRa = '\uD83D\uDC41',
+        change = this.props.change,
+        placeholder = this.props.placeholder,
+        edit = this.props.edit,
+        val = this.props.val,
+        textColor = this.props.textColor,
+        hide = this.state.hide;
 
     return (
       <View>
         <TextInput
-          style = {[styles.passwordField, styles.props]}
-          onChangeText = {this.props.change}
-          placeholder = {this.props.placeholder}
-          editable = {this.props.edit}
-          value = {this.props.val}
+          style = {styles.passwordField(textColor)}
+          onChangeText = {change}
+          placeholder = {placeholder}
+          editable = {edit}
+          value = {val}
           autoCapitalize = {'none'}
-          secureTextEntry = {this.state.hide}
+          secureTextEntry = {hide}
         />
         <TouchableHighlight
-          style = {styles.showTextHighlight}
+          style = {styles.showTextHighlight()}
           onPress = {this.showPass.bind(this)}
           underlayColor = {'transparent'}>
-          <Text style={styles.showText}>{EYE}</Text>
+          <Text style={styles.showText()}>{eyeOfRa}</Text>
         </TouchableHighlight>
       </View>
     );

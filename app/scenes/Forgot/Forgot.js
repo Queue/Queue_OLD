@@ -38,26 +38,23 @@ export default class Forgot extends Component {
   }
 
   resetPassword() {
-    if (this.state.emailText !== '') {
+    let email = this.state.emailText;
 
-      let auth = Data.firebase.auth();
-      let emailAddress = this.state.emailText;
+    if (email !== '' && Common.validateEmail(email)) {
 
-      auth.sendPasswordResetEmail(emailAddress).then(() => {
-        // Email sent.
-      }, (error) => {
-        // An error happened.
-      });
+      Data.Auth.resetPassEmail(email);
 
       dismissKeyboard();
       Actions.SignInRoute();
 
     } else {
-      console.warn('Enter your email');
+      Common.error('Error', 'Enter your email');
     }
   }
 
   render() {
+    let email = this.state.emailText;
+
     return (
       <View style = {styles.container}>
         <View style = {styles.wrapper}>
@@ -69,7 +66,7 @@ export default class Forgot extends Component {
             placeholder = {'Email'}
             focus={this.state.focus}
             change = {(text) => this.setState({emailText: text})}
-            val = {this.state.emailText}
+            val = {email}
           />
           <PrimaryButton
             name = {'Reset Password'}
