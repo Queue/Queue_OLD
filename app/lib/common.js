@@ -1,5 +1,6 @@
 //
 // Common functions exist here
+import { Alert } from 'react-native';
 
 export default Common = {
 
@@ -9,18 +10,34 @@ export default Common = {
   },
 
   warn: (code, message) => {
-    console.warn(
+    console.log(
       'Warning' + '\n' +
       'Code: ' + code + '\n' +
       'Message: ' + message
     );
+
+    Alert.alert(
+      code,
+      message,
+      [
+        {text: 'OK', style: 'cancel'}
+      ]
+    );
   },
 
   error: (code, message) => {
-    console.error(
+    console.log(
       'Error' + '\n' +
       'Code: ' + code + '\n' +
       'Message: ' + message
+    );
+
+    Alert.alert(
+      code,
+      message,
+      [
+        {text: 'OK', style: 'cancel'}
+      ]
     );
   },
 

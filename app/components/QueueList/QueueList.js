@@ -22,7 +22,7 @@ export default class QueueList extends Component {
     this.ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
     this.state = {
       basic: true,
-      listViewData: Array(10).fill('').map((_,i)=>`${(i+1)}`)
+      listViewData: Array(10).fill('').map((_,i)=>`${i+1}`)
     };
   }
 
