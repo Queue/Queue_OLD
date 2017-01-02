@@ -21,12 +21,11 @@ export default Data = {
 
     // Sign in method
     signIn(email, password) {
+      // return the promise
       Firebase.auth().signInWithEmailAndPassword(email, password).then(() => {
         Common.log('Success', 'Email Success');
-        return true;
       }, (error) => {
         Common.log(error.code, error.message);
-        return false;
       });
     },
 
@@ -37,15 +36,12 @@ export default Data = {
         if (user) {
           user.sendEmailVerification().then(() => {
             Common.log('Success', 'Email Success');
-            return true;
           }, (error) => {
             Common.log(error.code, error.message);
-            return false;
           });
         }
       }, (error) => {
         Common.log(error.code, error.message);
-        return false;
       });
     },
 
@@ -53,10 +49,8 @@ export default Data = {
     signOut() {
       Firebase.auth().signOut().then(() => {
         Common.log('Success', 'Email Success');
-        return true;
       }, (error) => {
         Common.log(error.code, error.message);
-        return false;
       });
     },
 
@@ -64,10 +58,8 @@ export default Data = {
     resetPassEmail(email) {
       Firebase.auth().sendPasswordResetEmail(emailAddress).then(() => {
         Common.log('Success', 'Email Success');
-        return true;
       }, (error) => {
         Common.log(error.code, error.message);
-        return false;
       });
     }
 

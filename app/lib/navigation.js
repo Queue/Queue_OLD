@@ -24,6 +24,7 @@ export default class Navigation extends Component {
   }
 
   componentWillMount() {
+    console.log(Data.Auth.user())
     if (Data.Auth.user()) {
       this.setState({
         signInBool: false,

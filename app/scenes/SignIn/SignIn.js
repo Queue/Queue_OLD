@@ -46,9 +46,8 @@ export default class SignIn extends Component {
 
     if (password !== '' && Common.validateEmail(email)) {
       // sign in user
-      Data.Auth.signIn(email, password);
-
-      console.log(Data.Auth.signIn(email, password));
+      let value = Data.Auth.signIn(email, password);
+      console.warn(value);
 
       dismissKeyboard();
 
