@@ -4,30 +4,16 @@
 import React, { Component } from 'react';
 import styles from './styles';
 import {View,  Text} from 'react-native';
-
-// Components
 import {
   PrimaryButton,
   EmailField,
   PasswordField,
   TextButton
 } from '../../components';
-
-// So the keyboard doesnt get in the way
 import KeyboardSpacer from 'react-native-keyboard-spacer';
-
-// Data
 import Data from '../../lib/data';
-
-// Colors
 import Colors from '../../lib/colors';
-
-// Router Actions see ../../lib/navigation
 import { Actions } from 'react-native-router-flux'
-
-// Dismiss keyboard
-import dismissKeyboard from 'react-native-dismiss-keyboard';
-
 import Common from '../../lib/common';
 
 export default class SignUp extends Component {
@@ -35,12 +21,10 @@ export default class SignUp extends Component {
     super(props);
 
     this.state = {
-      // Form fields state
-      emailText: '',
+      emailText: '', // fields text state
       passwordText: '',
 
-      // Color
-      emailColor: Colors.primaryForeground,
+      emailColor: Colors.primaryForeground, // color states
       passwordColor: Colors.primaryForeground
     };
   }
@@ -49,25 +33,25 @@ export default class SignUp extends Component {
     let email = this.state.emailText,
         password = this.state.passwordText;
 
-    if (!Common.validateEmail(email)) {
-      return Common.error('Error', 'Enter a valid email.');
-    }
+    if (Common.validateEmail(email)) {
+      if (password !== '' || password.length >= 8) {
+        Data.Auth.signUp(email, password).then(() => { // sign up the user
+          Common.log('Success', 'User signed up.');
+          Actions.DashboardRoute();
+          Common.dismissKeyboard();
+        }, (error) => {
+          Common.error(error.code, error.message);
+        });
 
-    if (password === '' || password.length < 8) {
-      Common.error('Error', 'Enter a valid password.\n(Eight characters or more)');
+        this.setState({ // reset text
+          emailText: '',
+          passwordText: ''
+        });
+      } else {
+        Common.error('Error', 'Enter a valid password.\n(Eight characters or more)');
+      }
     } else {
-      // Create a new user
-      Data.Auth.signUp(email, password);
-
-      dismissKeyboard();
-
-      // Reset fields state
-      this.setState({
-        emailText: '',
-        passwordText: ''
-      });
-
-      Actions.DashboardRoute();
+      Common.error('Error', 'Enter a valid email.');
     }
   }
 
@@ -132,6 +116,3 @@ export default class SignUp extends Component {
   }
 
 }
-
-// end
-//

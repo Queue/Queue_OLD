@@ -21,46 +21,22 @@ export default Data = {
 
     // Sign in method
     signIn(email, password) {
-      // return the promise
-      Firebase.auth().signInWithEmailAndPassword(email, password).then(() => {
-        Common.log('Success', 'Email Success');
-      }, (error) => {
-        Common.log(error.code, error.message);
-      });
+      return Firebase.auth().signInWithEmailAndPassword(email, password);
     },
 
     // Sign up method
     signUp(email, password) {
-      Firebase.auth().createUserWithEmailAndPassword(email, password).then(() => {
-        let user = Firebase.auth().currentUser;
-        if (user) {
-          user.sendEmailVerification().then(() => {
-            Common.log('Success', 'Email Success');
-          }, (error) => {
-            Common.log(error.code, error.message);
-          });
-        }
-      }, (error) => {
-        Common.log(error.code, error.message);
-      });
+      return Firebase.auth().createUserWithEmailAndPassword(email, password);
     },
 
     // Sign out method
     signOut() {
-      Firebase.auth().signOut().then(() => {
-        Common.log('Success', 'Email Success');
-      }, (error) => {
-        Common.log(error.code, error.message);
-      });
+      return Firebase.auth().signOut();
     },
 
     // Reset pass email method
     resetPassEmail(email) {
-      Firebase.auth().sendPasswordResetEmail(emailAddress).then(() => {
-        Common.log('Success', 'Email Success');
-      }, (error) => {
-        Common.log(error.code, error.message);
-      });
+      return Firebase.auth().sendPasswordResetEmail(emailAddress);
     }
 
   }, // end of auth methods

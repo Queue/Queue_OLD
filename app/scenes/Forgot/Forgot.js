@@ -4,29 +4,17 @@
 import React, { Component } from 'react';
 import styles from './styles';
 import {View,  Text} from 'react-native';
-
-// Components
 import {
   PrimaryButton,
   EmailField,
   PasswordField,
   TextButton
 } from '../../components';
-
-// So the keyboard doesnt get in the way
 import KeyboardSpacer from 'react-native-keyboard-spacer';
-
-// Data
 import Data from '../../lib/data';
-
-// Colors
 import Colors from '../../lib/colors';
-
-// Router Actions see ../../lib/navigation
 import { Actions } from 'react-native-router-flux'
-
-// Dismiss keyboard
-import dismissKeyboard from 'react-native-dismiss-keyboard';
+import Common from '../../lib/common';
 
 export default class Forgot extends Component {
   constructor(props) {
@@ -41,12 +29,13 @@ export default class Forgot extends Component {
     let email = this.state.emailText;
 
     if (email !== '' && Common.validateEmail(email)) {
-
-      Data.Auth.resetPassEmail(email);
-
-      dismissKeyboard();
-      Actions.SignInRoute();
-
+      Data.Auth.resetPassEmail(email).then(() => {
+        Common.log('Success', 'Password reset email sent.');
+        Common.dismissKeyboard();
+        Actions.SignInRoute();
+      }, (error) => {
+        Common.error('Error', 'Email is not registered.');
+      });
     } else {
       Common.error('Error', 'Enter your email');
     }
@@ -84,6 +73,3 @@ export default class Forgot extends Component {
   }
 
 }
-
-// end
-//

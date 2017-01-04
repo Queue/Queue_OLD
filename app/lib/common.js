@@ -2,6 +2,9 @@
 // Common functions exist here
 import { Alert } from 'react-native';
 
+// dismiss the keyboard
+import dismissKeyboard from 'react-native-dismiss-keyboard';
+
 export default Common = {
 
   validateEmail(email) {
@@ -9,44 +12,30 @@ export default Common = {
     return re.test(email);
   },
 
-  warn(code, message) {
-    console.log(
-      'Warning' + '\n' +
-      'Code: ' + code + '\n' +
-      'Message: ' + message
-    );
+  dismissKeyboard() {
+    dismissKeyboard();
+  },
 
+  warn(code, message) {
+    console.log(`Warning\nCode: ${code}\nMessage: ${message}`);
     Alert.alert(
       code,
       message,
-      [
-        {text: 'OK', style: 'cancel'}
-      ]
+      [{text: 'OK', style: 'cancel'}]
     );
   },
 
   error(code, message) {
-    console.log(
-      'Error' + '\n' +
-      'Code: ' + code + '\n' +
-      'Message: ' + message
-    );
-
+    console.log(`Error\nCode: ${code}\nMessage: ${message}`);
     Alert.alert(
       code,
       message,
-      [
-        {text: 'OK', style: 'cancel'}
-      ]
+      [{text: 'OK', style: 'cancel'}]
     );
   },
 
   log(code, message) {
-    console.log(
-      'Log' + '\n' +
-      'Code: ' + code + '\n' +
-      'Message: ' + message
-    );
+    console.log(`Log\nCode: ${code}\nMessage: ${message}`);
   }
 
 };

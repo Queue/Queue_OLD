@@ -3,31 +3,19 @@
 
 import React, { Component } from 'react';
 import styles from './styles';
-
-// RN
 import {
   View,
   Text
 } from 'react-native';
-
-// Components
 import {
   PrimaryButton,
   EmailField,
   PasswordField,
   TextButton
 } from '../../components';
-
 import Common from '../../lib/common';
 import Data from '../../lib/data';
-
-// So the keyboard doesnt get in the way
 import KeyboardSpacer from 'react-native-keyboard-spacer';
-
-// dissmiss the keayboard
-import dismissKeyboard from 'react-native-dismiss-keyboard';
-
-// Router
 import { Actions } from 'react-native-router-flux';
 
 export default class SignIn extends Component {
@@ -45,24 +33,19 @@ export default class SignIn extends Component {
         password = this.state.passwordText;
 
     if (password !== '' && Common.validateEmail(email)) {
-      // sign in user
-      let value = Data.Auth.signIn(email, password);
-      console.warn(value);
-
-      dismissKeyboard();
-
       // Reset fields state
       this.setState({
         emailText: '',
         passwordText: ''
       });
 
-      if (Data.Auth.user()) {
+     // sign in user
+      Data.Auth.signIn(email, password).then(() => {
+        Common.dismissKeyboard();
         Actions.DashboardRoute();
-      } else {
-        Common.error('Error', 'Incorrect email and password.');
-      }
-
+      }, (error) => {
+        Common.error(error.code, error.message);
+      });
     } else {
       Common.error('Error', 'Check your email and password.');
     }
@@ -111,6 +94,3 @@ export default class SignIn extends Component {
   }
 
 }
-
-// end
-//

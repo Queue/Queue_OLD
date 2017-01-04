@@ -11,7 +11,6 @@ import {
   TouchableHighlight,
   View
 } from 'react-native';
-
 import { SwipeListView, SwipeRow } from 'react-native-swipe-list-view';
 import styles from './styles';
 import Colors from '../../lib/colors';
@@ -21,7 +20,6 @@ export default class QueueList extends Component {
     super(props);
     this.ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
     this.state = {
-      basic: true,
       listViewData: Array(10).fill('').map((_,i)=>`${i+1}`)
     };
   }
@@ -36,10 +34,9 @@ export default class QueueList extends Component {
   row(data) {
     return (
       <TouchableHighlight
-        onPress={ () => console.log('You touched me') }
-        style={styles.rowFront}
-        underlayColor={Colors.primaryBackground}
-      >
+        onPress = {() => console.log('You touched me')}
+        style = {styles.rowFront}
+        underlayColor = {Colors.primaryBackground}>
         <View>
           <Text>{data} I'm in a SwipeListView'</Text>
         </View>

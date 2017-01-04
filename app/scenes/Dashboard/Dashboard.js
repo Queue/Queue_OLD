@@ -6,17 +6,10 @@ import { StyleSheet, View, Text } from 'react-native';
 import { Grid, Col } from 'react-native-easy-grid';
 import Layout from '../../lib/layout';
 import Colors from '../../lib/colors';
-
-// components
 import { TextButton, QueueList } from '../../components';
-
-// Router Actions see ../../lib/navigation
 import { Actions } from 'react-native-router-flux'
-
 import Data from '../../lib/data';
 import Fonts from '../../lib/fonts';
-
-import * as firebase from 'firebase';
 
 export default class Dashboard extends Component {
   constructor(props) {
