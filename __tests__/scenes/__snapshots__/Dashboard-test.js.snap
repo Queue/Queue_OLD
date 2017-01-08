@@ -281,30 +281,49 @@ exports[`test renders correctly 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                Array [
-                  Object {
-                    "backgroundColor": "transparent",
-                  },
-                  Object {
-                    "alignItems": "flex-start",
-                    "backgroundColor": "white",
-                    "height": 50,
-                    "justifyContent": "center",
-                    "marginBottom": 1,
-                    "paddingLeft": 20,
-                    "paddingRight": 20,
-                  },
-                ]
+                Object {
+                  "opacity": 1,
+                }
               }
               testID={undefined}>
-              <View>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail">
-                  1
-                   I\'m in a SwipeListView\'
-                </Text>
+              <View
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hitSlop={undefined}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "transparent",
+                    },
+                    Object {
+                      "alignItems": "flex-start",
+                      "backgroundColor": "white",
+                      "height": 50,
+                      "justifyContent": "center",
+                      "marginBottom": 1,
+                      "paddingLeft": 20,
+                      "paddingRight": 20,
+                    },
+                  ]
+                }
+                testID={undefined}>
+                <View>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail">
+                     I\'m in a SwipeListView\'
+                  </Text>
+                </View>
               </View>
             </View>
           </View>
@@ -450,30 +469,49 @@ exports[`test renders correctly 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                Array [
-                  Object {
-                    "backgroundColor": "transparent",
-                  },
-                  Object {
-                    "alignItems": "flex-start",
-                    "backgroundColor": "white",
-                    "height": 50,
-                    "justifyContent": "center",
-                    "marginBottom": 1,
-                    "paddingLeft": 20,
-                    "paddingRight": 20,
-                  },
-                ]
+                Object {
+                  "opacity": 1,
+                }
               }
               testID={undefined}>
-              <View>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail">
-                  2
-                   I\'m in a SwipeListView\'
-                </Text>
+              <View
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hitSlop={undefined}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "transparent",
+                    },
+                    Object {
+                      "alignItems": "flex-start",
+                      "backgroundColor": "white",
+                      "height": 50,
+                      "justifyContent": "center",
+                      "marginBottom": 1,
+                      "paddingLeft": 20,
+                      "paddingRight": 20,
+                    },
+                  ]
+                }
+                testID={undefined}>
+                <View>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail">
+                     I\'m in a SwipeListView\'
+                  </Text>
+                </View>
               </View>
             </View>
           </View>
@@ -619,30 +657,49 @@ exports[`test renders correctly 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                Array [
-                  Object {
-                    "backgroundColor": "transparent",
-                  },
-                  Object {
-                    "alignItems": "flex-start",
-                    "backgroundColor": "white",
-                    "height": 50,
-                    "justifyContent": "center",
-                    "marginBottom": 1,
-                    "paddingLeft": 20,
-                    "paddingRight": 20,
-                  },
-                ]
+                Object {
+                  "opacity": 1,
+                }
               }
               testID={undefined}>
-              <View>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail">
-                  3
-                   I\'m in a SwipeListView\'
-                </Text>
+              <View
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hitSlop={undefined}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "transparent",
+                    },
+                    Object {
+                      "alignItems": "flex-start",
+                      "backgroundColor": "white",
+                      "height": 50,
+                      "justifyContent": "center",
+                      "marginBottom": 1,
+                      "paddingLeft": 20,
+                      "paddingRight": 20,
+                    },
+                  ]
+                }
+                testID={undefined}>
+                <View>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail">
+                     I\'m in a SwipeListView\'
+                  </Text>
+                </View>
               </View>
             </View>
           </View>
@@ -788,30 +845,49 @@ exports[`test renders correctly 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                Array [
-                  Object {
-                    "backgroundColor": "transparent",
-                  },
-                  Object {
-                    "alignItems": "flex-start",
-                    "backgroundColor": "white",
-                    "height": 50,
-                    "justifyContent": "center",
-                    "marginBottom": 1,
-                    "paddingLeft": 20,
-                    "paddingRight": 20,
-                  },
-                ]
+                Object {
+                  "opacity": 1,
+                }
               }
               testID={undefined}>
-              <View>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail">
-                  4
-                   I\'m in a SwipeListView\'
-                </Text>
+              <View
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hitSlop={undefined}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "transparent",
+                    },
+                    Object {
+                      "alignItems": "flex-start",
+                      "backgroundColor": "white",
+                      "height": 50,
+                      "justifyContent": "center",
+                      "marginBottom": 1,
+                      "paddingLeft": 20,
+                      "paddingRight": 20,
+                    },
+                  ]
+                }
+                testID={undefined}>
+                <View>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail">
+                     I\'m in a SwipeListView\'
+                  </Text>
+                </View>
               </View>
             </View>
           </View>
@@ -957,30 +1033,49 @@ exports[`test renders correctly 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                Array [
-                  Object {
-                    "backgroundColor": "transparent",
-                  },
-                  Object {
-                    "alignItems": "flex-start",
-                    "backgroundColor": "white",
-                    "height": 50,
-                    "justifyContent": "center",
-                    "marginBottom": 1,
-                    "paddingLeft": 20,
-                    "paddingRight": 20,
-                  },
-                ]
+                Object {
+                  "opacity": 1,
+                }
               }
               testID={undefined}>
-              <View>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail">
-                  5
-                   I\'m in a SwipeListView\'
-                </Text>
+              <View
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hitSlop={undefined}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "transparent",
+                    },
+                    Object {
+                      "alignItems": "flex-start",
+                      "backgroundColor": "white",
+                      "height": 50,
+                      "justifyContent": "center",
+                      "marginBottom": 1,
+                      "paddingLeft": 20,
+                      "paddingRight": 20,
+                    },
+                  ]
+                }
+                testID={undefined}>
+                <View>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail">
+                     I\'m in a SwipeListView\'
+                  </Text>
+                </View>
               </View>
             </View>
           </View>
@@ -1126,30 +1221,49 @@ exports[`test renders correctly 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                Array [
-                  Object {
-                    "backgroundColor": "transparent",
-                  },
-                  Object {
-                    "alignItems": "flex-start",
-                    "backgroundColor": "white",
-                    "height": 50,
-                    "justifyContent": "center",
-                    "marginBottom": 1,
-                    "paddingLeft": 20,
-                    "paddingRight": 20,
-                  },
-                ]
+                Object {
+                  "opacity": 1,
+                }
               }
               testID={undefined}>
-              <View>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail">
-                  6
-                   I\'m in a SwipeListView\'
-                </Text>
+              <View
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hitSlop={undefined}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "transparent",
+                    },
+                    Object {
+                      "alignItems": "flex-start",
+                      "backgroundColor": "white",
+                      "height": 50,
+                      "justifyContent": "center",
+                      "marginBottom": 1,
+                      "paddingLeft": 20,
+                      "paddingRight": 20,
+                    },
+                  ]
+                }
+                testID={undefined}>
+                <View>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail">
+                     I\'m in a SwipeListView\'
+                  </Text>
+                </View>
               </View>
             </View>
           </View>
@@ -1295,30 +1409,49 @@ exports[`test renders correctly 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                Array [
-                  Object {
-                    "backgroundColor": "transparent",
-                  },
-                  Object {
-                    "alignItems": "flex-start",
-                    "backgroundColor": "white",
-                    "height": 50,
-                    "justifyContent": "center",
-                    "marginBottom": 1,
-                    "paddingLeft": 20,
-                    "paddingRight": 20,
-                  },
-                ]
+                Object {
+                  "opacity": 1,
+                }
               }
               testID={undefined}>
-              <View>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail">
-                  7
-                   I\'m in a SwipeListView\'
-                </Text>
+              <View
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hitSlop={undefined}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "transparent",
+                    },
+                    Object {
+                      "alignItems": "flex-start",
+                      "backgroundColor": "white",
+                      "height": 50,
+                      "justifyContent": "center",
+                      "marginBottom": 1,
+                      "paddingLeft": 20,
+                      "paddingRight": 20,
+                    },
+                  ]
+                }
+                testID={undefined}>
+                <View>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail">
+                     I\'m in a SwipeListView\'
+                  </Text>
+                </View>
               </View>
             </View>
           </View>
@@ -1464,30 +1597,49 @@ exports[`test renders correctly 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                Array [
-                  Object {
-                    "backgroundColor": "transparent",
-                  },
-                  Object {
-                    "alignItems": "flex-start",
-                    "backgroundColor": "white",
-                    "height": 50,
-                    "justifyContent": "center",
-                    "marginBottom": 1,
-                    "paddingLeft": 20,
-                    "paddingRight": 20,
-                  },
-                ]
+                Object {
+                  "opacity": 1,
+                }
               }
               testID={undefined}>
-              <View>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail">
-                  8
-                   I\'m in a SwipeListView\'
-                </Text>
+              <View
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hitSlop={undefined}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "transparent",
+                    },
+                    Object {
+                      "alignItems": "flex-start",
+                      "backgroundColor": "white",
+                      "height": 50,
+                      "justifyContent": "center",
+                      "marginBottom": 1,
+                      "paddingLeft": 20,
+                      "paddingRight": 20,
+                    },
+                  ]
+                }
+                testID={undefined}>
+                <View>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail">
+                     I\'m in a SwipeListView\'
+                  </Text>
+                </View>
               </View>
             </View>
           </View>
@@ -1633,30 +1785,49 @@ exports[`test renders correctly 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                Array [
-                  Object {
-                    "backgroundColor": "transparent",
-                  },
-                  Object {
-                    "alignItems": "flex-start",
-                    "backgroundColor": "white",
-                    "height": 50,
-                    "justifyContent": "center",
-                    "marginBottom": 1,
-                    "paddingLeft": 20,
-                    "paddingRight": 20,
-                  },
-                ]
+                Object {
+                  "opacity": 1,
+                }
               }
               testID={undefined}>
-              <View>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail">
-                  9
-                   I\'m in a SwipeListView\'
-                </Text>
+              <View
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hitSlop={undefined}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "transparent",
+                    },
+                    Object {
+                      "alignItems": "flex-start",
+                      "backgroundColor": "white",
+                      "height": 50,
+                      "justifyContent": "center",
+                      "marginBottom": 1,
+                      "paddingLeft": 20,
+                      "paddingRight": 20,
+                    },
+                  ]
+                }
+                testID={undefined}>
+                <View>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail">
+                     I\'m in a SwipeListView\'
+                  </Text>
+                </View>
               </View>
             </View>
           </View>
@@ -1802,30 +1973,49 @@ exports[`test renders correctly 1`] = `
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
               style={
-                Array [
-                  Object {
-                    "backgroundColor": "transparent",
-                  },
-                  Object {
-                    "alignItems": "flex-start",
-                    "backgroundColor": "white",
-                    "height": 50,
-                    "justifyContent": "center",
-                    "marginBottom": 1,
-                    "paddingLeft": 20,
-                    "paddingRight": 20,
-                  },
-                ]
+                Object {
+                  "opacity": 1,
+                }
               }
               testID={undefined}>
-              <View>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail">
-                  10
-                   I\'m in a SwipeListView\'
-                </Text>
+              <View
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hitSlop={undefined}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "transparent",
+                    },
+                    Object {
+                      "alignItems": "flex-start",
+                      "backgroundColor": "white",
+                      "height": 50,
+                      "justifyContent": "center",
+                      "marginBottom": 1,
+                      "paddingLeft": 20,
+                      "paddingRight": 20,
+                    },
+                  ]
+                }
+                testID={undefined}>
+                <View>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail">
+                     I\'m in a SwipeListView\'
+                  </Text>
+                </View>
               </View>
             </View>
           </View>

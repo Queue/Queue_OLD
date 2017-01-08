@@ -3,7 +3,6 @@
 
 import React, { Component } from 'react';
 import {
-  AppRegistry,
   ListView,
   StyleSheet,
   Text,
@@ -14,6 +13,7 @@ import {
 import { SwipeListView, SwipeRow } from 'react-native-swipe-list-view';
 import styles from './styles';
 import Colors from '../../lib/colors';
+import Queuer from '../Queuer';
 
 export default class QueueList extends Component {
   constructor(props) {
@@ -64,7 +64,7 @@ export default class QueueList extends Component {
       <View style={styles.container}>
         <SwipeListView
           dataSource = {this.ds.cloneWithRows(this.state.listViewData)}
-          renderRow = {this.row.bind(this)}
+          renderRow = {() => {return <Queuer />}}
           renderHiddenRow = {this.hiddenRow.bind(this)}
           rightOpenValue = {-150}
         />
