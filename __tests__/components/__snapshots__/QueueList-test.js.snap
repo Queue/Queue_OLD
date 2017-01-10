@@ -112,24 +112,34 @@ exports[`test renders correctly 1`] = `
             </Text>
           </View>
           <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hitSlop={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
             style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "bottom": 0,
-                  "justifyContent": "center",
-                  "marginBottom": 1,
-                  "marginTop": -1,
-                  "position": "absolute",
-                  "top": 0,
-                  "width": 75,
-                },
-                Object {
-                  "backgroundColor": "#8FD6D6",
-                  "right": 75,
-                },
-              ]
-            }>
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#8FD6D6",
+                "bottom": 0,
+                "justifyContent": "center",
+                "marginBottom": 1,
+                "marginTop": -1,
+                "opacity": 1,
+                "position": "absolute",
+                "right": 75,
+                "top": 0,
+                "width": 75,
+              }
+            }
+            testID={undefined}>
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -221,6 +231,7 @@ exports[`test renders correctly 1`] = `
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail">
+                1
                  I\'m in a SwipeListView\'
               </Text>
             </View>
@@ -300,24 +311,34 @@ exports[`test renders correctly 1`] = `
             </Text>
           </View>
           <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hitSlop={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
             style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "bottom": 0,
-                  "justifyContent": "center",
-                  "marginBottom": 1,
-                  "marginTop": -1,
-                  "position": "absolute",
-                  "top": 0,
-                  "width": 75,
-                },
-                Object {
-                  "backgroundColor": "#8FD6D6",
-                  "right": 75,
-                },
-              ]
-            }>
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#8FD6D6",
+                "bottom": 0,
+                "justifyContent": "center",
+                "marginBottom": 1,
+                "marginTop": -1,
+                "opacity": 1,
+                "position": "absolute",
+                "right": 75,
+                "top": 0,
+                "width": 75,
+              }
+            }
+            testID={undefined}>
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -409,6 +430,7 @@ exports[`test renders correctly 1`] = `
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail">
+                2
                  I\'m in a SwipeListView\'
               </Text>
             </View>
@@ -488,24 +510,34 @@ exports[`test renders correctly 1`] = `
             </Text>
           </View>
           <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hitSlop={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
             style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "bottom": 0,
-                  "justifyContent": "center",
-                  "marginBottom": 1,
-                  "marginTop": -1,
-                  "position": "absolute",
-                  "top": 0,
-                  "width": 75,
-                },
-                Object {
-                  "backgroundColor": "#8FD6D6",
-                  "right": 75,
-                },
-              ]
-            }>
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#8FD6D6",
+                "bottom": 0,
+                "justifyContent": "center",
+                "marginBottom": 1,
+                "marginTop": -1,
+                "opacity": 1,
+                "position": "absolute",
+                "right": 75,
+                "top": 0,
+                "width": 75,
+              }
+            }
+            testID={undefined}>
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -597,6 +629,7 @@ exports[`test renders correctly 1`] = `
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail">
+                3
                  I\'m in a SwipeListView\'
               </Text>
             </View>
@@ -676,24 +709,34 @@ exports[`test renders correctly 1`] = `
             </Text>
           </View>
           <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hitSlop={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
             style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "bottom": 0,
-                  "justifyContent": "center",
-                  "marginBottom": 1,
-                  "marginTop": -1,
-                  "position": "absolute",
-                  "top": 0,
-                  "width": 75,
-                },
-                Object {
-                  "backgroundColor": "#8FD6D6",
-                  "right": 75,
-                },
-              ]
-            }>
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#8FD6D6",
+                "bottom": 0,
+                "justifyContent": "center",
+                "marginBottom": 1,
+                "marginTop": -1,
+                "opacity": 1,
+                "position": "absolute",
+                "right": 75,
+                "top": 0,
+                "width": 75,
+              }
+            }
+            testID={undefined}>
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -785,6 +828,7 @@ exports[`test renders correctly 1`] = `
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail">
+                4
                  I\'m in a SwipeListView\'
               </Text>
             </View>
@@ -864,24 +908,34 @@ exports[`test renders correctly 1`] = `
             </Text>
           </View>
           <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hitSlop={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
             style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "bottom": 0,
-                  "justifyContent": "center",
-                  "marginBottom": 1,
-                  "marginTop": -1,
-                  "position": "absolute",
-                  "top": 0,
-                  "width": 75,
-                },
-                Object {
-                  "backgroundColor": "#8FD6D6",
-                  "right": 75,
-                },
-              ]
-            }>
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#8FD6D6",
+                "bottom": 0,
+                "justifyContent": "center",
+                "marginBottom": 1,
+                "marginTop": -1,
+                "opacity": 1,
+                "position": "absolute",
+                "right": 75,
+                "top": 0,
+                "width": 75,
+              }
+            }
+            testID={undefined}>
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -973,6 +1027,7 @@ exports[`test renders correctly 1`] = `
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail">
+                5
                  I\'m in a SwipeListView\'
               </Text>
             </View>
@@ -1052,24 +1107,34 @@ exports[`test renders correctly 1`] = `
             </Text>
           </View>
           <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hitSlop={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
             style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "bottom": 0,
-                  "justifyContent": "center",
-                  "marginBottom": 1,
-                  "marginTop": -1,
-                  "position": "absolute",
-                  "top": 0,
-                  "width": 75,
-                },
-                Object {
-                  "backgroundColor": "#8FD6D6",
-                  "right": 75,
-                },
-              ]
-            }>
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#8FD6D6",
+                "bottom": 0,
+                "justifyContent": "center",
+                "marginBottom": 1,
+                "marginTop": -1,
+                "opacity": 1,
+                "position": "absolute",
+                "right": 75,
+                "top": 0,
+                "width": 75,
+              }
+            }
+            testID={undefined}>
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -1161,6 +1226,7 @@ exports[`test renders correctly 1`] = `
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail">
+                6
                  I\'m in a SwipeListView\'
               </Text>
             </View>
@@ -1240,24 +1306,34 @@ exports[`test renders correctly 1`] = `
             </Text>
           </View>
           <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hitSlop={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
             style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "bottom": 0,
-                  "justifyContent": "center",
-                  "marginBottom": 1,
-                  "marginTop": -1,
-                  "position": "absolute",
-                  "top": 0,
-                  "width": 75,
-                },
-                Object {
-                  "backgroundColor": "#8FD6D6",
-                  "right": 75,
-                },
-              ]
-            }>
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#8FD6D6",
+                "bottom": 0,
+                "justifyContent": "center",
+                "marginBottom": 1,
+                "marginTop": -1,
+                "opacity": 1,
+                "position": "absolute",
+                "right": 75,
+                "top": 0,
+                "width": 75,
+              }
+            }
+            testID={undefined}>
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -1349,6 +1425,7 @@ exports[`test renders correctly 1`] = `
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail">
+                7
                  I\'m in a SwipeListView\'
               </Text>
             </View>
@@ -1428,24 +1505,34 @@ exports[`test renders correctly 1`] = `
             </Text>
           </View>
           <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hitSlop={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
             style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "bottom": 0,
-                  "justifyContent": "center",
-                  "marginBottom": 1,
-                  "marginTop": -1,
-                  "position": "absolute",
-                  "top": 0,
-                  "width": 75,
-                },
-                Object {
-                  "backgroundColor": "#8FD6D6",
-                  "right": 75,
-                },
-              ]
-            }>
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#8FD6D6",
+                "bottom": 0,
+                "justifyContent": "center",
+                "marginBottom": 1,
+                "marginTop": -1,
+                "opacity": 1,
+                "position": "absolute",
+                "right": 75,
+                "top": 0,
+                "width": 75,
+              }
+            }
+            testID={undefined}>
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -1537,6 +1624,7 @@ exports[`test renders correctly 1`] = `
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail">
+                8
                  I\'m in a SwipeListView\'
               </Text>
             </View>
@@ -1616,24 +1704,34 @@ exports[`test renders correctly 1`] = `
             </Text>
           </View>
           <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hitSlop={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
             style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "bottom": 0,
-                  "justifyContent": "center",
-                  "marginBottom": 1,
-                  "marginTop": -1,
-                  "position": "absolute",
-                  "top": 0,
-                  "width": 75,
-                },
-                Object {
-                  "backgroundColor": "#8FD6D6",
-                  "right": 75,
-                },
-              ]
-            }>
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#8FD6D6",
+                "bottom": 0,
+                "justifyContent": "center",
+                "marginBottom": 1,
+                "marginTop": -1,
+                "opacity": 1,
+                "position": "absolute",
+                "right": 75,
+                "top": 0,
+                "width": 75,
+              }
+            }
+            testID={undefined}>
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -1725,6 +1823,7 @@ exports[`test renders correctly 1`] = `
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail">
+                9
                  I\'m in a SwipeListView\'
               </Text>
             </View>
@@ -1804,24 +1903,34 @@ exports[`test renders correctly 1`] = `
             </Text>
           </View>
           <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            hitSlop={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
             style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "bottom": 0,
-                  "justifyContent": "center",
-                  "marginBottom": 1,
-                  "marginTop": -1,
-                  "position": "absolute",
-                  "top": 0,
-                  "width": 75,
-                },
-                Object {
-                  "backgroundColor": "#8FD6D6",
-                  "right": 75,
-                },
-              ]
-            }>
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#8FD6D6",
+                "bottom": 0,
+                "justifyContent": "center",
+                "marginBottom": 1,
+                "marginTop": -1,
+                "opacity": 1,
+                "position": "absolute",
+                "right": 75,
+                "top": 0,
+                "width": 75,
+              }
+            }
+            testID={undefined}>
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -1913,6 +2022,7 @@ exports[`test renders correctly 1`] = `
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail">
+                10
                  I\'m in a SwipeListView\'
               </Text>
             </View>

@@ -10,7 +10,7 @@ import {
 import styles from './styles';
 
 export default class HiddenRow extends Component {
-  render(data, secId, rowId, rowMap) {
+  render() {
     return (
       <View style={styles.rowBack}>
         <TouchableOpacity

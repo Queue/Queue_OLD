@@ -5,25 +5,8 @@ import { StyleSheet } from 'react-native';
 import Colors from '../../lib/colors';
 
 export default styles = StyleSheet.create({
-	container: {
-		backgroundColor: Colors.primaryBackground,
-		flex: 1,
-    zIndex: 9999,
-    marginTop: 21,
-    borderTopColor: Colors.primaryBackground,
-    borderTopWidth: 1
-	},
 	backTextWhite: {
 		color: '#FFF'
-	},
-	rowFront: {
-		backgroundColor: 'white',
-		alignItems: 'flex-start',
-    paddingLeft: 20,
-    marginBottom: 1,
-    paddingRight: 20,
-		justifyContent: 'center',
-		height: 50,
 	},
 	rowBack: {
 		alignItems: 'center',
@@ -50,25 +33,5 @@ export default styles = StyleSheet.create({
 	backRightBtnRight: {
 		backgroundColor: Colors.error,
 		right: 0
-	},
-  moreButton: {
-    backgroundColor: Colors.text,
-    right: 150
-  },
-	controls: {
-		alignItems: 'center',
-		marginBottom: 30
-	},
-	switchContainer: {
-		flexDirection: 'row',
-		justifyContent: 'center',
-		marginBottom: 5
-	},
-	switch: {
-		alignItems: 'center',
-		borderWidth: 1,
-		borderColor: 'black',
-		paddingVertical: 10,
-		width: 100,
 	}
 });

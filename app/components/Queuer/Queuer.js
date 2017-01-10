@@ -1,3 +1,6 @@
+//
+// Queuer list item component
+
 import React, { Component } from 'react';
 import {
   Text,
@@ -12,14 +15,14 @@ export default class Queuer extends Component {
     super(props);
   }
 
-  render(data) {
+  render() {
     return (
       <TouchableHighlight
         onPress = {() => console.log('You touched me')}
         style = {styles.rowFront}
         underlayColor = {Colors.primaryBackground}>
         <View>
-          <Text>{data} I'm in a SwipeListView'</Text>
+          <Text>{this.props.data} I'm in a SwipeListView'</Text>
         </View>
       </TouchableHighlight>
     );

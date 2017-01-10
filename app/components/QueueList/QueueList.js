@@ -2,18 +2,12 @@
 // QueueList
 
 import React, { Component } from 'react';
-import {
-  ListView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  TouchableHighlight,
-  View
-} from 'react-native';
+import { ListView, View } from 'react-native';
 import { SwipeListView, SwipeRow } from 'react-native-swipe-list-view';
+import Queuer from '../Queuer';
+import HiddenRow from '../HiddenRow';
 import styles from './styles';
 import Colors from '../../lib/colors';
-import Queuer from '../Queuer';
 
 export default class QueueList extends Component {
   constructor(props) {
@@ -33,29 +27,13 @@ export default class QueueList extends Component {
 
   row(data) {
     return (
-      <TouchableHighlight
-        onPress = {() => console.log('You touched me')}
-        style = {styles.rowFront}
-        underlayColor = {Colors.primaryBackground}>
-        <View>
-          <Text>{data} I'm in a SwipeListView'</Text>
-        </View>
-      </TouchableHighlight>
+      <Queuer data={data} />
     );
   }
 
   hiddenRow(data, secId, rowId, rowMap) {
     return (
-      <View style={styles.rowBack}>
-        <TouchableOpacity
-          style={[styles.backRightBtn, styles.backRightBtnRight]}
-          onPress={() => this.deleteRow}>
-          <Text style={styles.backTextWhite}>{'Delete'}</Text>
-        </TouchableOpacity>
-        <View style={[styles.backRightBtn, styles.backRightBtnLeft]}>
-          <Text style={styles.backTextWhite}>{'Text'}</Text>
-        </View>
-      </View>
+      <HiddenRow />
     );
   }
 
@@ -64,7 +42,7 @@ export default class QueueList extends Component {
       <View style={styles.container}>
         <SwipeListView
           dataSource = {this.ds.cloneWithRows(this.state.listViewData)}
-          renderRow = {() => {return <Queuer />}}
+          renderRow = {this.row.bind(this)}
           renderHiddenRow = {this.hiddenRow.bind(this)}
           rightOpenValue = {-150}
         />
