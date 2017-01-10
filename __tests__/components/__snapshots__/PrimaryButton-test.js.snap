@@ -41,11 +41,11 @@ exports[`test renders correctly 1`] = `
         null,
         Array [
           Object {
-            "fontSize": 20,
             "fontWeight": "500",
           },
           Object {
             "color": "#48C948",
+            "fontSize": 20,
           },
         ],
         null,

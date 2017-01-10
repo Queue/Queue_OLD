@@ -1,9 +1,9 @@
 //
 // Common functions exist here
-import { Alert } from 'react-native';
 
-// dismiss the keyboard
+import { Alert } from 'react-native';
 import dismissKeyboard from 'react-native-dismiss-keyboard';
+import Reactotron from 'reactotron-react-native'
 
 export default Common = {
 
@@ -17,7 +17,7 @@ export default Common = {
   },
 
   warn(code, message) {
-    console.log(`Warning\nCode: ${code}\nMessage: ${message}`);
+    Reactotron.log(`Warning\nCode: ${code}\nMessage: ${message}`);
     Alert.alert(
       code,
       message,
@@ -26,7 +26,7 @@ export default Common = {
   },
 
   error(code, message) {
-    console.log(`Error\nCode: ${code}\nMessage: ${message}`);
+    Reactotron.log(`Error\nCode: ${code}\nMessage: ${message}`);
     Alert.alert(
       code,
       message,
@@ -35,7 +35,7 @@ export default Common = {
   },
 
   log(code, message) {
-    console.log(`Log\nCode: ${code}\nMessage: ${message}`);
+    Reactotron.log(`Log\nCode: ${code}\nMessage: ${message}`);
   }
 
 };

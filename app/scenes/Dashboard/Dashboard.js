@@ -2,14 +2,16 @@
 // Dashboard scene
 
 import React, { Component } from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, TouchableHighlight } from 'react-native';
 import { Grid, Col } from 'react-native-easy-grid';
-import Layout from '../../lib/layout';
-import Colors from '../../lib/colors';
 import { TextButton, QueueList } from '../../components';
 import { Actions } from 'react-native-router-flux'
 import Data from '../../lib/data';
+import Common from '../../lib/common';
+import Layout from '../../lib/layout';
+import Colors from '../../lib/colors';
 import Fonts from '../../lib/fonts';
+import styles from './styles';
 
 export default class Dashboard extends Component {
   constructor(props) {
@@ -20,7 +22,7 @@ export default class Dashboard extends Component {
 
   // test purposes only
   ping() {
-    console.log(Data.Auth.user().providerData[0].uid);
+    Common.log('Success', 'Pinged it!');
   }
 
   render() {
@@ -45,33 +47,13 @@ export default class Dashboard extends Component {
 
         <Col style={styles.queueList}>
           <QueueList />
+          <TouchableHighlight
+            style={styles.addButton}>
+            <Text style={styles.addButtonText}>+</Text>
+          </TouchableHighlight>
         </Col>
 
       </Grid>
     );
   }
 };
-
-const styles = StyleSheet.create({
-  default: {
-    backgroundColor: 'white'
-  },
-  logOutButton: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: 20
-  },
-  navMenu: {
-    borderRightWidth: 1,
-    borderColor: Colors.primaryBackground,
-    maxWidth: 110
-  },
-  actionArea: {
-    borderRightWidth: 1,
-    borderColor: Colors.primaryBackground,
-    minWidth: 525
-  },
-  queueList: {
-  }
-});

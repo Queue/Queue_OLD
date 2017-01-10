@@ -8,10 +8,11 @@ import styles from './styles';
 import Button from 'react-native-button';
 import Colors from '../../lib/colors';
 
-export default PrimaryBtn = ({name, press, buttonColor}) => {
+export default PrimaryBtn = ({name, press, buttonColor, fontSize}) => {
 
   styles.buttonOverwrite = {
-    color: buttonColor
+    color: buttonColor,
+    fontSize: fontSize
   }
 
   styles.containerOverwrite = {
@@ -30,9 +31,12 @@ export default PrimaryBtn = ({name, press, buttonColor}) => {
 
 PrimaryBtn.propType = {
   name: React.PropTypes.string,
-  press: React.PropTypes.func 
+  press: React.PropTypes.func,
+  buttonColor: React.PropTypes.string,
+  fontSize: React.PropTypes.number
 }
 
 PrimaryBtn.defaultProps = {
-  buttonColor: Colors.primaryForeground
+  buttonColor: Colors.primaryForeground,
+  fontSize: 20
 };

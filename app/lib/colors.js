@@ -6,7 +6,6 @@ export default Colors = {
   primaryBackground : '#eaeaea',
   primaryForeground : '#48C948',
 
-
   text              : '#333333',
   textOpaque        : 'rgb(51,51,51,0.77)',
 

@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "sim": "react-native run-ios --simulator 'iPad Air 2' && open /Applications/Reactotron.app"
   },
   "dependencies": {
     "firebase": "^3.6.3",
@@ -23,7 +24,8 @@
     "babel-preset-react-native": "1.9.0",
     "jest": "17.0.3",
     "jest-react-native": "17.1.0",
-    "react-test-renderer": "~15.4.0-rc.4"
+    "react-test-renderer": "~15.4.0-rc.4",
+    "reactotron-react-native": "^1.6.0"
   },
   "jest": {
     "preset": "react-native",
